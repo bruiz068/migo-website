@@ -65,19 +65,22 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-900/90 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-6 py-4">
-          <div className="flex items-center justify-between">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-gradient-to-r from-neutral-900/95 via-purple-900/30 to-pink-900/30 backdrop-blur">
+        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-3">
               <img 
                 src="https://i.imgur.com/clZNuAZ.png?v=2" 
                 alt="Migo Logo" 
                 className="h-12 w-auto"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                  e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                }}
               />
-              <span className="text-xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
-                Advertisement
-              </span>
+              <span className="font-extrabold tracking-tight text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Advertisement</span>
             </Link>
+          </div>
             <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
               <Link href="/pricing" className="hover:text-pink-400 font-semibold">Pricing</Link>
               <Link href="/ad-specs" className="hover:text-purple-400 font-semibold">Ad Specs</Link>
@@ -91,7 +94,6 @@ export default function AboutPage() {
                 Home
               </Link>
             </nav>
-          </div>
         </div>
       </header>
 

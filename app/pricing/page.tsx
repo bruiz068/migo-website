@@ -159,7 +159,7 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation Header */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-900/90 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-gradient-to-r from-neutral-900/95 via-purple-900/30 to-pink-900/30 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
