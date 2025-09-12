@@ -31,7 +31,7 @@ export default function PricingPage() {
     return <PasswordProtection onAuthenticated={() => setIsAuthenticated(true)} />;
   }
 
-  const frequencyTiers = [
+  const placementTiers = [
     {
       name: "Standard",
       price: 0,
@@ -265,18 +265,18 @@ export default function PricingPage() {
           </div>
         </div>
 
-        {/* Frequency Tiers */}
+        {/* Placement Tiers */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-center mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-            🎯 Frequency Tiers
+            📍 Placement Tiers
           </h2>
           <p className="text-gray-300 text-center mb-12 max-w-3xl mx-auto">
-            Choose your campaign's frequency level. Higher tiers guarantee more ad plays during your campaign period. 
+            Select your ad placement priority. Higher tiers secure premium time slots and get displayed first for maximum visibility. 
             Pay once per campaign - no monthly commitments.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {frequencyTiers.map((tier, index) => (
+            {placementTiers.map((tier, index) => (
               <div
                 key={tier.name}
                 className={`relative bg-gray-900 border-2 ${tier.borderColor} rounded-2xl p-6 transition-all duration-300 hover:scale-105 hover:shadow-2xl ${
