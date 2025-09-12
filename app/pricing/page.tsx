@@ -103,12 +103,6 @@ export default function PricingPage() {
 
   const cpiRates = [
     {
-      rate: "$0.018",
-      type: "Shared Screen Ad (5s)",
-      description: "Maximum value for constant exposure",
-      color: "text-green-500"
-    },
-    {
       rate: "$0.035",
       type: "5-Second Still Image",
       description: "Static ad display, quick impression",
