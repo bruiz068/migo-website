@@ -115,7 +115,7 @@ export default function PricingPage() {
       color: "text-purple-500"
     },
     {
-      rate: "$0.140",
+      rate: "$0.150",
       type: "20-Second Video (No Sound)",
       description: "Silent video content, visual engagement",
       color: "text-orange-500"
@@ -127,7 +127,7 @@ export default function PricingPage() {
       color: "text-pink-500"
     },
     {
-      rate: "$0.500",
+      rate: "$0.800",
       type: "60-Second Video (With Sound)",
       description: "Premium content with audio + unlocks tablet music selection for riders",
       color: "text-red-500"
