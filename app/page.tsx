@@ -113,7 +113,6 @@ export default function Page() {
             <a href="#video" className="hover:text-pink-400">Demo</a>
             <a href="#features" className="hover:text-purple-400">Features</a>
             <a href="#contact" className="hover:text-purple-400">Contact</a>
-            <a href="#cta" className="rounded-xl px-4 py-2 bg-gradient-to-r from-pink-500 to-sky-500 text-white font-semibold hover:opacity-90">Get Started</a>
           </nav>
         </div>
       </header>
