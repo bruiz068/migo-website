@@ -122,9 +122,15 @@ export default function PricingPage() {
     },
     {
       rate: "$0.250",
-      type: "30-Second Video (With Sound)",
-      description: "Full audio-visual experience, maximum impact",
+      type: "30-Second Video (No Sound)",
+      description: "Extended silent video content, visual storytelling",
       color: "text-pink-500"
+    },
+    {
+      rate: "$0.500",
+      type: "60-Second Video (With Sound)",
+      description: "Extended premium content, maximum engagement",
+      color: "text-red-500"
     }
   ];
 
@@ -336,9 +342,9 @@ export default function PricingPage() {
             allowing you to optimize for engagement level and media richness.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-8 justify-items-center">
             {cpiRates.map((rate, index) => (
-              <div key={index} className="bg-gray-900 border border-gray-700 rounded-xl p-6 text-center hover:border-purple-400 transition-colors">
+              <div key={index} className="bg-gray-900 border border-gray-700 rounded-xl p-6 text-center hover:border-purple-400 transition-colors w-full max-w-xs">
                 <div className={`text-2xl font-bold ${rate.color} mb-2`}>{rate.rate}</div>
                 <div className="text-white font-medium mb-2">{rate.type}</div>
                 <div className="text-gray-400 text-sm">{rate.description}</div>
@@ -365,12 +371,13 @@ export default function PricingPage() {
               <h5 className="text-blue-400 font-bold mb-2">📈 POST-LAUNCH EXAMPLE (After January 2026):</h5>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2 text-gray-200">
-                  <p><strong>Content:</strong> 20-second video ($0.140 per impression)</p>
-                  <p><strong>Target Goal:</strong> 5,000 impressions delivered</p>
+                  <p><strong>Content:</strong> 10-second video ($0.070 per impression)</p>
+                  <p><strong>Target Goal:</strong> 3,000 impressions delivered</p>
+                  <p><strong>Timeframe:</strong> Typical one-month campaign</p>
                 </div>
                 <div className="space-y-2 text-gray-200">
                   <p><strong>How it works:</strong> You only pay when ads are actually viewed</p>
-                  <p><strong>Total Cost:</strong> 5,000 impressions × $0.140 = <span className="text-blue-400 font-bold text-xl">$700</span></p>
+                  <p><strong>Total Cost:</strong> 3,000 impressions × $0.070 = <span className="text-blue-400 font-bold text-xl">$210</span></p>
                 </div>
               </div>
               <div className="mt-3 text-sm text-gray-400">
