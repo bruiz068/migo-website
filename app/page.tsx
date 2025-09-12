@@ -390,7 +390,29 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="offer" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+      <section id="features" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Platform Features</h2>
+          <p className="mt-3 text-white/80 max-w-2xl mx-auto">Powerful mobile billboard technology that delivers results through strategic targeting and interactive experiences.</p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {icon: MapPin, title: "Geo-targeted Mobile Billboard", desc: "Tablets in rideshare vehicles show ads by city, neighborhood, or route for maximum relevance."},
+            {icon: QrCode, title: "QR codes that convert", desc: "Passengers scan and land on promos, menus, apps, or booking pages in seconds."},
+            {icon: Clock, title: "Time-slot scheduling", desc: "Choose exact hours and days to match foot traffic and campaign windows."},
+            {icon: ShieldCheck, title: "Brand-safe delivery", desc: "Clear guidelines and approvals ensure quality placements and content."},
+            {icon: Rocket, title: "Ready to scale", desc: "From 10 to hundreds of tablets — manage campaigns with ease."},
+            {icon: DollarSign, title: "Performance tracking", desc: "Detailed reports show impression delivery, route coverage, and campaign effectiveness."},
+          ].map((f, i) => (
+            <div key={i} className="rounded-2xl border border-white/10 bg-neutral-900 p-6 hover:border-pink-400/30 transition">
+              <div className="h-10 w-10 grid place-items-center rounded-xl bg-gradient-to-tr from-pink-500 via-purple-500 to-sky-400 mb-4"><f.icon size={18}/></div>
+              <h3 className="font-semibold text-lg">{f.title}</h3>
+              <p className="mt-2 text-white/70 text-sm">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
         <div className="rounded-3xl border border-pink-400/30 bg-gradient-to-br from-neutral-900 to-neutral-800 p-8 md:p-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>

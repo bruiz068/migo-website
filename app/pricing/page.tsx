@@ -136,9 +136,9 @@ export default function PricingPage() {
 
   const addOnServices = [
     {
-      service: "Custom Ad Design",
-      description: "Professional design optimized for Samsung A9+ tablets",
-      price: "$75 - $150"
+      service: "Professional Content Creation",
+      description: "Custom videos, animations & graphics (see Complete Advertising Solution section above)",
+      price: "$200 - $500"
     },
     {
       service: "QR Code Setup & Landing Page",
