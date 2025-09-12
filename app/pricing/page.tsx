@@ -129,7 +129,7 @@ export default function PricingPage() {
     {
       rate: "$0.500",
       type: "60-Second Video (With Sound)",
-      description: "Extended premium content, maximum engagement",
+      description: "Premium content with audio + unlocks tablet music selection for riders",
       color: "text-red-500"
     }
   ];
