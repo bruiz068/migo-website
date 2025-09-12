@@ -354,15 +354,33 @@ export default function PricingPage() {
 
           {/* Example Calculation */}
           <div className="bg-gradient-to-r from-gray-900 to-gray-800 border border-blue-500/30 rounded-xl p-6">
-            <h4 className="text-xl font-bold text-blue-400 mb-4">📊 Example Campaign Cost Calculation:</h4>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2 text-gray-200">
-                <p><strong>Content Type:</strong> 20-second video without sound ($0.140 CPI)</p>
-                <p><strong>Campaign Duration:</strong> 8 hours × 5 days = 40 hours</p>
+            <h4 className="text-xl font-bold text-blue-400 mb-4">📊 Campaign Cost Examples:</h4>
+            
+            {/* Current Pre-Launch Phase */}
+            <div className="bg-green-500/10 border border-green-400/30 rounded-lg p-4 mb-4">
+              <h5 className="text-green-400 font-bold mb-2">🚀 PRE-LAUNCH PHASE (Now - January 2026):</h5>
+              <div className="text-gray-200">
+                <p><strong>Cost:</strong> <span className="text-green-400 font-bold text-xl">$0 (FREE)</span></p>
+                <p><strong>What you get:</strong> FREE impressions + high-frequency placement for testing</p>
+                <p><strong>Duration:</strong> Campaign runs until you're satisfied with results</p>
               </div>
-              <div className="space-y-2 text-gray-200">
-                <p><strong>Estimated Impressions:</strong> 40 hours × 150 views/hour = 6,000 impressions</p>
-                <p><strong>Total CPI Cost:</strong> 6,000 × $0.140 = <span className="text-blue-400 font-bold text-xl">$840</span></p>
+            </div>
+
+            {/* Post-Launch Example */}
+            <div className="bg-blue-500/10 border border-blue-400/30 rounded-lg p-4">
+              <h5 className="text-blue-400 font-bold mb-2">📈 POST-LAUNCH EXAMPLE (After January 2026):</h5>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2 text-gray-200">
+                  <p><strong>Content:</strong> 20-second video ($0.140 per impression)</p>
+                  <p><strong>Target Goal:</strong> 5,000 impressions delivered</p>
+                </div>
+                <div className="space-y-2 text-gray-200">
+                  <p><strong>How it works:</strong> You only pay when ads are actually viewed</p>
+                  <p><strong>Total Cost:</strong> 5,000 impressions × $0.140 = <span className="text-blue-400 font-bold text-xl">$700</span></p>
+                </div>
+              </div>
+              <div className="mt-3 text-sm text-gray-400">
+                <p>💡 <em>No hourly fees - you only pay for actual impressions delivered to passengers</em></p>
               </div>
             </div>
           </div>
