@@ -187,14 +187,14 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="bg-gradient-to-r from-black via-gray-900 to-black border-b border-white/10">
-        <div className="container mx-auto px-6 py-4">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-900/90 backdrop-blur">
+        <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <img 
                 src="https://i.imgur.com/clZNuAZ.png?v=2" 
                 alt="Migo Logo" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
               <span className="text-xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
                 Advertisement
