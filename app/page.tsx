@@ -413,6 +413,8 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <section id="offer" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
         <div className="rounded-3xl border border-pink-400/30 bg-gradient-to-br from-neutral-900 to-neutral-800 p-8 md:p-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
