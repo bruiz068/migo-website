@@ -108,7 +108,6 @@ export default function Page() {
             <Link href="/driver-earnings" className="hover:text-sky-400 font-semibold">Driver Earnings</Link>
             <Link href="/service-area" className="hover:text-green-400 font-semibold">Service Area</Link>
             <Link href="/about" className="hover:text-blue-400 font-semibold">About</Link>
-            <Link href="/testimonials" className="hover:text-yellow-400 font-semibold">Testimonials</Link>
             <Link href="/faq" className="hover:text-cyan-400 font-semibold">FAQ</Link>
             <a href="#video" className="hover:text-pink-400">Demo</a>
             <a href="#features" className="hover:text-purple-400">Features</a>
@@ -480,94 +479,6 @@ export default function Page() {
                 <li>• Driver earnings overview</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Preview */}
-      <section id="testimonials" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-              Real Success Stories
-            </h2>
-            <p className="text-white/60 text-lg">
-              Drivers earning extra income and businesses growing with mobile billboard advertising
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Driver Testimonial */}
-            <div className="bg-gradient-to-r from-green-500/10 via-blue-500/10 to-purple-500/10 rounded-2xl border border-green-400/30 p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b332c74c?w=150&h=150&fit=crop&crop=face" 
-                  alt="Maria Rodriguez"
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div>
-                  <h3 className="text-lg font-bold text-white">Maria Rodriguez</h3>
-                  <p className="text-green-400 font-semibold">Uber Driver</p>
-                  <p className="text-white/60 text-sm">Phoenix, AZ</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className="w-4 h-4 text-yellow-400">★</div>
-                ))}
-              </div>
-              
-              <p className="text-white/80 mb-4 italic">
-                "Since joining Migo Advertisement, I've been earning $25 per day per active campaign. Simple equipment financing and I own the tablet when paid off!"
-              </p>
-              
-              <div className="text-center">
-                <div className="text-2xl font-bold text-green-400">$25/day per campaign</div>
-                <div className="text-white/60 text-sm">Potential: $300+/month</div>
-              </div>
-            </div>
-
-            {/* Business Testimonial */}
-            <div className="bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 rounded-2xl border border-blue-400/30 p-6">
-              <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face" 
-                  alt="Tony Martinez"
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div>
-                  <h3 className="text-lg font-bold text-white">Tony Martinez</h3>
-                  <p className="text-blue-400 font-semibold">Tony's Authentic Pizza</p>
-                  <p className="text-white/60 text-sm">Owner • Phoenix, AZ</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className="w-4 h-4 text-yellow-400">★</div>
-                ))}
-              </div>
-              
-              <p className="text-white/80 mb-4 italic">
-                "Our mobile billboard campaign brought in 40% more customers in the first campaign period. Much better ROI than traditional billboards!"
-              </p>
-              
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-400">40% increase</div>
-                <div className="text-white/60 text-sm">New Customers</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <Link 
-              href="/testimonials"
-              className="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 font-semibold shadow-lg shadow-green-500/30 hover:shadow-green-500/50 transition-shadow"
-            >
-              Read More Success Stories
-              <ArrowRight size={18} />
-            </Link>
           </div>
         </div>
       </section>
