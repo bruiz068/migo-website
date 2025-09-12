@@ -19,7 +19,8 @@ import {
   Lock,
   Mail,
   Phone,
-  Globe
+  Globe,
+  Sparkles
 } from "lucide-react";
 
 export default function PricingPage() {
@@ -421,6 +422,61 @@ export default function PricingPage() {
             <div className="text-center mt-6">
               <p className="text-amber-400 font-semibold">💡 Professionally designed content typically performs 40-60% better than basic graphics</p>
             </div>
+          </div>
+        </section>
+
+        {/* Complete Advertising Solution */}
+        <section className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Complete Advertising Solution</h2>
+            <p className="mt-3 text-white/80 max-w-2xl mx-auto">From professional content creation to targeted mobile billboard delivery — we handle everything so you can focus on growing your business.</p>
+          </div>
+          
+          {/* Premium Content Creation Feature */}
+          <div className="mb-12 rounded-3xl border border-amber-400/30 bg-gradient-to-br from-amber-500/10 to-orange-500/10 p-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 text-xs rounded-full border border-amber-400/30 bg-amber-500/10 px-3 py-1 mb-4">
+                  <Sparkles size={14} className="text-amber-400"/> NEW FEATURE
+                </div>
+                <h3 className="text-2xl font-bold text-amber-400 mb-3">Professional Content Creation</h3>
+                <p className="text-white/80 mb-4">Our expert design team creates eye-catching videos, animations, and graphics specifically optimized for mobile billboard displays. No design skills needed — we handle everything.</p>
+                <ul className="space-y-2 text-sm text-white/70">
+                  <li>✨ Custom video ads with your branding</li>
+                  <li>🎨 Professional graphic design and animations</li>
+                  <li>📱 Mobile-optimized formats and sizing</li>
+                  <li>🚀 40-60% better campaign performance</li>
+                  <li>⚡ 2-3 day turnaround time</li>
+                </ul>
+              </div>
+              <div className="bg-neutral-900 rounded-2xl p-6 border border-amber-400/20">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-amber-400 mb-2">$200-500</div>
+                  <div className="text-white/60 text-sm mb-4">per campaign</div>
+                  <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-lg p-4">
+                    <div className="text-amber-400 font-semibold mb-2">Package Options:</div>
+                    <div className="text-xs text-white/70 space-y-1">
+                      <div>📄 Basic: Static graphics ($200)</div>
+                      <div>🎬 Professional: Animated content ($350)</div>
+                      <div>🎥 Premium: Custom video production ($500)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {title: "Strategic Targeting", desc: "Target specific neighborhoods, business districts, or traffic patterns to reach your ideal customers."},
+              {title: "Real-Time Analytics", desc: "Track impressions, engagement rates, and campaign performance with detailed analytics dashboards."},
+              {title: "Flexible Scheduling", desc: "Schedule your campaigns for peak hours, special events, or specific days to maximize impact."}
+            ].map((f, i) => (
+              <div key={i} className="rounded-2xl border border-white/10 bg-neutral-900/50 p-6">
+                <h3 className="font-semibold text-lg">{f.title}</h3>
+                <p className="mt-2 text-white/70 text-sm">{f.desc}</p>
+              </div>
+            ))}
           </div>
         </section>
 
