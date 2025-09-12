@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import Link from "nex  return (
+    <div className="min-h-screen w-full bg-gradient-to-br from-neutral-950 via-purple-950/20 to-pink-950/20 text-white">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-gradient-to-r from-neutral-900/95 via-purple-900/30 to-pink-900/30 backdrop-blur">ink";
 import { ArrowRight, Smartphone, QrCode, MapPin, Clock, Rocket, Sparkles, DollarSign, Mail, ShieldCheck } from "lucide-react";
 
 export default function Page() {
