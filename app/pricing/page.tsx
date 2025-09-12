@@ -497,8 +497,8 @@ export default function PricingPage() {
             <div className="space-y-3 text-sm text-orange-100">
               <p><strong>CPI Estimates:</strong> All impression counts and CPI calculations are estimates based on historical data and may vary significantly based on actual traffic conditions, route changes, and market factors.</p>
               <p><strong>Service Availability:</strong> Campaign availability subject to driver network capacity and route scheduling. Premium locations and peak hour slots limited and allocated on first-come, first-served basis.</p>
-              <p><strong>Pre-Launch Offer:</strong> FREE Starter plan availability limited to pre-launch period. Terms subject to change upon full market launch.</p>
-              <p><strong>Pricing Changes:</strong> All pricing subject to change with 30-day notice. Existing campaigns honored at original contracted rates.</p>
+              <p><strong>Pre-Launch Testing Phase:</strong> During our current testing phase (until January 2026 launch), all campaigns receive FREE impressions with high-frequency placement. Price lock guarantees and campaign credits for qualifying early customers will be honored as promised.</p>
+              <p><strong>Pricing Changes:</strong> General pricing and service terms subject to change upon full market launch with 30-day written notice, except for existing contractual commitments which remain binding.</p>
             </div>
           </div>
         </section>
