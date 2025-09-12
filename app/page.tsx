@@ -10,7 +10,7 @@ export default function Page() {
   const [error, setError] = useState<string>("");
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Slideshow ads data
+  // Slideshow ads data - DEMO EXAMPLES ONLY
   const ads = [
     {
       business: "Tony's Pizza",
@@ -143,8 +143,8 @@ export default function Page() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4 text-sm">
                 <div className="flex items-center gap-2">
-                  <span className="text-pink-400">📊 ACTIVE:</span>
-                  <span className="text-white/80">Live advertising platform</span>
+                  <span className="text-pink-400">📊 PREPARING:</span>
+                  <span className="text-white/80">Platform development active</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-purple-400">🚀 LAUNCH 2026:</span>
@@ -175,7 +175,7 @@ export default function Page() {
             <div className="relative mx-auto max-w-lg">
               <div className="aspect-[16/10] rounded-2xl border border-white/10 bg-gradient-to-b from-neutral-900 to-neutral-800 p-3 shadow-2xl">
                 <div className="h-full w-full rounded-xl bg-neutral-950 overflow-hidden">
-                  {/* Simulated mobile billboard interface - Slideshow */}
+                  {/* DEMO: Mobile billboard interface with example businesses */}
                   <div className="h-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative">
                     {/* Current ad display with smooth transitions */}
                     <div className={`absolute inset-3 bg-gradient-to-br ${ads[currentSlide].gradient} rounded-lg overflow-hidden transition-all duration-500 ease-in-out`}>

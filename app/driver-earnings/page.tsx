@@ -11,19 +11,19 @@ export default function DriverEarnings() {
     {
       schedule: "Part-Time",
       hours: "15-20 hours/week",
-      potential: "$180-240",
+      potential: "$180-240*",
       description: "Perfect for supplementing income"
     },
     {
       schedule: "Regular",
       hours: "25-35 hours/week", 
-      potential: "$300-420",
+      potential: "$300-420*",
       description: "Steady additional income stream"
     },
     {
       schedule: "Full-Time",
       hours: "40+ hours/week",
-      potential: "$480+",
+      potential: "$480+*",
       description: "Maximum earning potential"
     }
   ];
