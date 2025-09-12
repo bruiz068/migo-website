@@ -108,7 +108,7 @@ export default function FAQPage() {
       faqs: [
         {
           question: "What type of tablets are used?",
-          answer: "High-brightness, weatherproof tablets designed for automotive use. They feature GPS tracking, 4G connectivity, anti-glare screens, and professional mounting systems."
+          answer: "Samsung Galaxy Tab A9+ tablets with 11-inch displays, Snapdragon 695 processors, and 4GB RAM. They feature built-in GPS tracking, 5G connectivity, bright TFT LCD screens optimized for visibility, and secure professional mounting systems designed for automotive use."
         },
         {
           question: "How is GPS tracking handled?",
