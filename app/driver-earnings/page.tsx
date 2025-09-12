@@ -90,7 +90,9 @@ export default function DriverEarnings() {
               <Link href="/pricing" className="hover:text-pink-400 font-semibold">Pricing</Link>
               <Link href="/ad-specs" className="hover:text-purple-400 font-semibold">Ad Specs</Link>
               <Link href="/driver-earnings" className="text-sky-400 font-semibold">Driver Earnings</Link>
-              <Link href="/faq" className="hover:text-cyan-400 font-semibold">FAQ</Link>
+              <Link href="/service-area" className="hover:text-cyan-400 font-semibold">Service Area</Link>
+              <Link href="/about" className="hover:text-green-400 font-semibold">About</Link>
+              <Link href="/faq" className="hover:text-yellow-400 font-semibold">FAQ</Link>
             </nav>
           </div>
         </div>
