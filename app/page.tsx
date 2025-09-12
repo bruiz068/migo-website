@@ -117,6 +117,36 @@ export default function Page() {
         </div>
       </header>
 
+      {/* EXCLUSIVE PRELAUNCH OFFER BANNER */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-pink-600/20 via-purple-600/20 to-sky-600/20 border-b border-pink-500/30">
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-sky-500/10" />
+        <div className="mx-auto max-w-7xl px-6 py-4 relative">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3 text-center md:text-left">
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 bg-pink-400 rounded-full animate-pulse" />
+                <span className="text-pink-400 font-bold text-sm uppercase tracking-wide">🔥 EXCLUSIVE PRELAUNCH</span>
+              </div>
+              <div className="hidden md:block w-px h-8 bg-white/20" />
+              <div>
+                <span className="text-white font-bold text-lg">FIRST 50 CUSTOMERS:</span>
+                <span className="ml-2 text-yellow-400 font-extrabold text-lg">$150 FREE CAMPAIGN CREDITS</span>
+                <span className="ml-2 text-white/80">+ Price Lock Guarantee!</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="text-center">
+                <div className="text-white/60 text-xs uppercase tracking-wide">Spots Remaining</div>
+                <div className="text-pink-400 font-bold text-xl">47</div>
+              </div>
+              <a href="#contact" className="px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full font-semibold text-white shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:scale-105">
+                Claim Your Spot →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section id="cta" className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full blur-3xl bg-pink-600/30" />
@@ -134,13 +164,56 @@ export default function Page() {
               We design ads, build websites & apps, and showcase your brand on our in-car <strong>Mobile Billboard</strong> network.
             </p>
             
-            {/* Growth Stats */}
-            <div className="mt-6 p-4 rounded-2xl border border-pink-400/30 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-sky-500/10">
-              <div className="text-center mb-3">
-                <div className="text-lg font-bold text-pink-400 mb-1">🗓️ Estimated Launch: January 15, 2026</div>
-                <div className="text-white/60 text-sm">Join us for the future of mobile advertising</div>
-                <div className="text-white/50 text-xs mt-1">*30-day written notice provided if launch date changes</div>
+            {/* PRELAUNCH OFFER & Growth Stats */}
+            <div className="mt-6 space-y-4">
+              {/* Exclusive Prelaunch Offer */}
+              <div className="p-6 rounded-2xl border-2 border-yellow-400/40 bg-gradient-to-r from-yellow-500/10 via-pink-500/10 to-purple-500/10 relative overflow-hidden">
+                <div className="absolute top-2 right-2">
+                  <div className="px-3 py-1 bg-red-500 text-white text-xs font-bold rounded-full animate-pulse">
+                    LIMITED TIME
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-extrabold text-yellow-400 mb-2">
+                    🎯 FOUNDING PARTNER EXCLUSIVE
+                  </div>
+                  <div className="text-lg font-bold text-white mb-3">
+                    First 50 Customers Get Everything:
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div className="p-3 bg-green-500/20 rounded-xl border border-green-400/30">
+                      <div className="text-green-400 font-bold text-lg">$150 FREE</div>
+                      <div className="text-white/80 text-sm">Campaign Credits</div>
+                    </div>
+                    <div className="p-3 bg-blue-500/20 rounded-xl border border-blue-400/30">
+                      <div className="text-blue-400 font-bold text-lg">1 YEAR</div>
+                      <div className="text-white/80 text-sm">Price Lock Guarantee</div>
+                    </div>
+                    <div className="p-3 bg-purple-500/20 rounded-xl border border-purple-400/30">
+                      <div className="text-purple-400 font-bold text-lg">PRIORITY</div>
+                      <div className="text-white/80 text-sm">Launch Access</div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center gap-4 text-sm">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-red-400 rounded-full" />
+                      <span className="text-white/80">Only <span className="text-red-400 font-bold">47 spots</span> remaining</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-green-400 rounded-full" />
+                      <span className="text-white/80">No contracts required</span>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              {/* Growth Timeline */}
+              <div className="p-4 rounded-2xl border border-pink-400/30 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-sky-500/10">
+                <div className="text-center mb-3">
+                  <div className="text-lg font-bold text-pink-400 mb-1">🗓️ Estimated Launch: January 15, 2026</div>
+                  <div className="text-white/60 text-sm">Join us for the future of mobile advertising</div>
+                  <div className="text-white/50 text-xs mt-1">*30-day written notice provided if launch date changes</div>
+                </div>
               <div className="flex flex-col sm:flex-row gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <span className="text-pink-400">📊 PREPARING:</span>
@@ -159,6 +232,7 @@ export default function Page() {
                   <span className="text-white/80">100+ tablets citywide</span>
                 </div>
               </div>
+            </div>
             </div>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
