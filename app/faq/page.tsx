@@ -112,7 +112,7 @@ export default function FAQPage() {
         },
         {
           question: "How is GPS tracking handled?",
-          answer: "Secure GPS tracking ensures accurate location reporting and impression counting. Data is encrypted and only used for service operation and performance reporting. Driver privacy is protected."
+          answer: "Secure GPS tracking ensures accurate location reporting and impression counting. Data is encrypted and only used for service operation and performance reporting. Driver privacy is protected. Rider privacy is protected too."
         },
         {
           question: "What happens if there's no internet connection?",
