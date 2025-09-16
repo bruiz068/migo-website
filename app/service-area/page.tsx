@@ -119,7 +119,50 @@ export default function ServiceAreaPage() {
                 <Navigation size={24} />
                 Current Testing Phase
               </h2>
-              <p className="text-white/80">3 tablets actively testing system reliability and performance - city permits secured for metro area operations</p>
+              <p className="text-white/80 mb-6">3 tablets actively testing system reliability and performance - city permits secured for metro area operations</p>
+              
+              {/* Testing Details */}
+              <div className="bg-black/20 rounded-xl p-6 mb-6">
+                <h3 className="text-lg font-semibold text-orange-300 mb-4">What We're Testing:</h3>
+                <div className="grid md:grid-cols-2 gap-4 text-left">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Screen visibility in direct sunlight</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Battery life during 8-hour shifts</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Weather resistance and durability</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Driver ease of use and feedback</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Ad rotation and display quality</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>GPS tracking accuracy</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Remote content management</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-white/80">
+                      <div className="w-1.5 h-1.5 bg-orange-400 rounded-full"></div>
+                      <span>Traffic pattern optimization</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             
             <div className="grid md:grid-cols-3 gap-6">
