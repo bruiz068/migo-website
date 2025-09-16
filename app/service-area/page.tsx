@@ -102,7 +102,7 @@ export default function ServiceAreaPage() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-4">
             <MapPin className="text-green-400" size={32} />
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
               Service Coverage Area
             </h1>
           </div>
