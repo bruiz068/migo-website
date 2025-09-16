@@ -112,7 +112,8 @@ export default function Page() {
             <Link href="/service-area" className="hover:text-green-400 font-semibold">Service Area</Link>
             <Link href="/about" className="hover:text-blue-400 font-semibold">About</Link>
             <Link href="/faq" className="hover:text-cyan-400 font-semibold">FAQ</Link>
-            <a href="#video" className="hover:text-pink-400">Demo</a>
+            <a href="#demo" className="hover:text-green-400">Free Demo</a>
+            <a href="#video" className="hover:text-pink-400">Video</a>
             <a href="#features" className="hover:text-purple-400">Features</a>
             <a href="#contact" className="hover:text-purple-400">Contact</a>
           </nav>
@@ -136,7 +137,8 @@ export default function Page() {
               <Link href="/service-area" className="block text-white/80 hover:text-green-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Service Area</Link>
               <Link href="/about" className="block text-white/80 hover:text-blue-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>About</Link>
               <Link href="/faq" className="block text-white/80 hover:text-cyan-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
-              <a href="#video" className="block text-white/80 hover:text-pink-400 py-2" onClick={() => setMobileMenuOpen(false)}>Demo</a>
+              <a href="#demo" className="block text-white/80 hover:text-green-400 py-2" onClick={() => setMobileMenuOpen(false)}>Free Demo</a>
+              <a href="#video" className="block text-white/80 hover:text-pink-400 py-2" onClick={() => setMobileMenuOpen(false)}>Video</a>
               <a href="#features" className="block text-white/80 hover:text-purple-400 py-2" onClick={() => setMobileMenuOpen(false)}>Features</a>
               <a href="#contact" className="block text-white/80 hover:text-purple-400 py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
             </nav>
@@ -414,6 +416,76 @@ export default function Page() {
             <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 text-white font-semibold">
               I'm interested <ArrowRight size={18}/>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FREE DEMO SECTION */}
+      <section id="demo" className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+        <div className="rounded-3xl border-2 border-green-400/40 bg-gradient-to-br from-green-500/10 via-blue-500/10 to-purple-500/10 p-8 md:p-12 relative overflow-hidden">
+          <div className="absolute top-4 right-4">
+            <div className="px-4 py-2 bg-green-500 text-white text-sm font-bold rounded-full animate-pulse">
+              FREE
+            </div>
+          </div>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 mb-4">
+              📱 FREE In-Person Demo
+            </h2>
+            <p className="text-xl text-white/90 font-semibold mb-2">
+              Want to see exactly how it works?
+            </p>
+            <p className="text-white/80 max-w-3xl mx-auto">
+              I'll bring our mobile billboard tablet directly to your business for a personalized demonstration. See the display quality, understand the platform, and visualize your ads in action.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="text-center p-6 rounded-xl border border-green-400/30 bg-black/20">
+              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-green-500/20 flex items-center justify-center">
+                <Smartphone size={20} className="text-green-400"/>
+              </div>
+              <h4 className="font-semibold mb-2 text-green-400">Live Demo</h4>
+              <p className="text-sm text-white/70">Hands-on demonstration at your location</p>
+            </div>
+            
+            <div className="text-center p-6 rounded-xl border border-blue-400/30 bg-black/20">
+              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-blue-500/20 flex items-center justify-center">
+                <MapPin size={20} className="text-blue-400"/>
+              </div>
+              <h4 className="font-semibold mb-2 text-blue-400">Coverage Maps</h4>
+              <p className="text-sm text-white/70">See your business area coverage in detail</p>
+            </div>
+            
+            <div className="text-center p-6 rounded-xl border border-purple-400/30 bg-black/20">
+              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-purple-500/20 flex items-center justify-center">
+                <Sparkles size={20} className="text-purple-400"/>
+              </div>
+              <h4 className="font-semibold mb-2 text-purple-400">Custom Mockups</h4>
+              <p className="text-sm text-white/70">See your brand on our mobile billboards</p>
+            </div>
+            
+            <div className="text-center p-6 rounded-xl border border-pink-400/30 bg-black/20">
+              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-pink-500/20 flex items-center justify-center">
+                <ShieldCheck size={20} className="text-pink-400"/>
+              </div>
+              <h4 className="font-semibold mb-2 text-pink-400">No Obligation</h4>
+              <p className="text-sm text-white/70">Just education and exploration</p>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="tel:+14806472380" className="inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105">
+                📞 Schedule Free Demo: (480) 647-2380
+              </a>
+              <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl px-6 py-3 border border-white/20 hover:bg-white/5 text-white font-semibold">
+                Request Demo Online <ArrowRight size={18}/>
+              </a>
+            </div>
+            <p className="mt-4 text-sm text-white/60">
+              *Free demo available throughout Phoenix Metro area • No sales pressure, just education
+            </p>
           </div>
         </div>
       </section>
