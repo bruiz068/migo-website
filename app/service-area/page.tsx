@@ -12,35 +12,35 @@ export default function ServiceAreaPage() {
   const expansionPlan = [
     { 
       phase: "Phase 1", 
-      timeline: "Launch 2026", 
-      areas: ["Central Phoenix", "Downtown", "Midtown"], 
-      tablets: 10,
+      timeline: "Current Testing", 
+      areas: ["Downtown Phoenix", "Camelback Corridor", "Central Phoenix"], 
+      tablets: 3,
       color: "text-green-400",
       bgColor: "bg-green-400/10",
       borderColor: "border-green-400/30"
     },
     { 
       phase: "Phase 2", 
-      timeline: "Q2 2026", 
-      areas: ["Paradise Valley", "Ahwatukee"], 
-      tablets: 15,
+      timeline: "Metro Expansion", 
+      areas: ["Phoenix Metro Area", "Scottsdale", "Tempe", "Mesa"], 
+      tablets: 10,
       color: "text-blue-400",
       bgColor: "bg-blue-400/10",
       borderColor: "border-blue-400/30"
     },
     { 
       phase: "Phase 3", 
-      timeline: "Q4 2026", 
-      areas: ["Mesa", "Chandler"], 
+      timeline: "State Coverage", 
+      areas: ["Tucson", "Flagstaff", "Yuma", "Casa Grande"], 
       tablets: 25,
       color: "text-purple-400",
       bgColor: "bg-purple-400/10",
       borderColor: "border-purple-400/30"
     },
     { 
-      phase: "Phase 4", 
-      timeline: "2027", 
-      areas: ["Full Metro Coverage", "Surrounding Cities"], 
+      phase: "Launch", 
+      timeline: "Full Arizona", 
+      areas: ["Statewide Coverage", "All Major Cities", "Key Transit Routes"], 
       tablets: "50+",
       color: "text-pink-400",
       bgColor: "bg-pink-400/10",
@@ -49,18 +49,19 @@ export default function ServiceAreaPage() {
   ];
 
   const keyRoutes = [
-    { name: "I-10 Corridor", description: "Main east-west artery through Phoenix", impact: "High visibility commuter route" },
-    { name: "Loop 101", description: "Circumferential freeway around Phoenix metro", impact: "Suburban shopping and business access" },
-    { name: "Central Avenue", description: "Major north-south arterial", impact: "Downtown and midtown business district" },
-    { name: "Camelback Road", description: "Premium east-west corridor", impact: "High-income residential and retail" },
-    { name: "7th Street/7th Avenue", description: "North-south Phoenix arterials", impact: "Central business and residential corridors" }
+    { name: "I-10 Corridor", description: "Main east-west artery through Phoenix and Tucson", impact: "High visibility interstate route" },
+    { name: "I-17 Phoenix-Flagstaff", description: "Major north-south interstate", impact: "Phoenix metro to northern Arizona" },
+    { name: "Loop 101/202", description: "Phoenix metro freeway system", impact: "Suburban shopping and business access" },
+    { name: "I-8 Yuma Corridor", description: "Western Arizona to California border", impact: "Cross-border commerce and tourism" },
+    { name: "US-60 Superstition Freeway", description: "East Valley major arterial", impact: "Mesa, Gilbert, and Apache Junction access" },
+    { name: "AZ-51 Piestewa Freeway", description: "Central Phoenix north-south route", impact: "Downtown to Paradise Valley corridor" }
   ];
 
   const demographics = [
-    { metric: "Metro Population", value: "5.0M+", description: "Phoenix Metropolitan Area" },
-    { metric: "Daily Commuters", value: "2.1M+", description: "Rideshare-accessible population" },
-    { metric: "Average Income", value: "$65K+", description: "Target advertising demographics" },
-    { metric: "Tourism Annual", value: "46M+", description: "Visitors to Phoenix area yearly" }
+    { metric: "Arizona Population", value: "7.4M+", description: "Statewide coverage area" },
+    { metric: "Daily Commuters", value: "3.2M+", description: "Rideshare-accessible population" },
+    { metric: "Average Income", value: "$58K+", description: "Target advertising demographics" },
+    { metric: "Tourism Annual", value: "65M+", description: "Visitors to Arizona yearly" }
   ];
 
   return (
@@ -106,7 +107,7 @@ export default function ServiceAreaPage() {
             </h1>
           </div>
           <p className="text-white/60 text-lg max-w-3xl mx-auto">
-            Strategic mobile billboard placement across Phoenix Metropolitan Area's highest-traffic routes and business districts.
+            Strategic mobile billboard placement across Arizona's highest-traffic routes and business districts, from testing phase to statewide coverage.
           </p>
         </div>
 
@@ -118,7 +119,7 @@ export default function ServiceAreaPage() {
                 <Navigation size={24} />
                 Current Testing Phase
               </h2>
-              <p className="text-white/80">3 tablets actively testing system reliability and performance</p>
+              <p className="text-white/80">3 tablets actively testing system reliability and performance in high-traffic areas</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-6">
@@ -171,7 +172,7 @@ export default function ServiceAreaPage() {
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-center text-white mb-8 flex items-center justify-center gap-2">
             <Map className="text-purple-400" size={28} />
-            High-Impact Routes
+            High-Impact Arizona Routes
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
