@@ -20,8 +20,8 @@ export default function ServiceAreaPage() {
       borderColor: "border-green-400/30"
     },
     { 
-      phase: "Phase 2", 
-      timeline: "Metro Expansion", 
+      phase: "Launch", 
+      timeline: "Official Launch", 
       areas: ["Phoenix Metro Area", "Scottsdale", "Tempe", "Mesa"], 
       tablets: 10,
       color: "text-blue-400",
@@ -29,17 +29,17 @@ export default function ServiceAreaPage() {
       borderColor: "border-blue-400/30"
     },
     { 
-      phase: "Phase 3", 
-      timeline: "State Coverage", 
-      areas: ["Tucson", "Flagstaff", "Yuma", "Casa Grande"], 
+      phase: "Year 1", 
+      timeline: "6-Month Expansion", 
+      areas: ["Tucson", "Flagstaff", "Extended Metro"], 
       tablets: 25,
       color: "text-purple-400",
       bgColor: "bg-purple-400/10",
       borderColor: "border-purple-400/30"
     },
     { 
-      phase: "Launch", 
-      timeline: "Full Arizona", 
+      phase: "Year 1 Goal", 
+      timeline: "12-Month Target", 
       areas: ["Statewide Coverage", "All Major Cities", "Key Transit Routes"], 
       tablets: "50+",
       color: "text-pink-400",
@@ -107,7 +107,7 @@ export default function ServiceAreaPage() {
             </h1>
           </div>
           <p className="text-white/60 text-lg max-w-3xl mx-auto">
-            Strategic mobile billboard placement across Arizona's highest-traffic routes and business districts, from testing phase to statewide coverage.
+            Strategic mobile billboard placement across Arizona, launching with 10 tablets in Phoenix Metro and expanding to 50+ tablets statewide within the first year.
           </p>
         </div>
 
