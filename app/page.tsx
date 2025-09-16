@@ -164,7 +164,7 @@ export default function Page() {
             <div className="flex items-center gap-4">
               <div className="text-center">
                 <div className="text-white/60 text-xs uppercase tracking-wide">Spots Remaining</div>
-                <div className="text-pink-400 font-bold text-xl">47</div>
+                <div className="text-pink-400 font-bold text-xl">50</div>
               </div>
               <a href="#contact" className="px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full font-semibold text-white shadow-lg hover:shadow-pink-500/25 transition-all duration-300 transform hover:scale-105">
                 Claim Your Spot →
@@ -224,7 +224,7 @@ export default function Page() {
                   <div className="flex items-center justify-center gap-4 text-sm">
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-red-400 rounded-full" />
-                      <span className="text-white/80">Only <span className="text-red-400 font-bold">47 spots</span> remaining</span>
+                      <span className="text-white/80">Only <span className="text-red-400 font-bold">50 spots</span> remaining</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full" />
@@ -237,7 +237,7 @@ export default function Page() {
               {/* Growth Timeline */}
               <div className="p-4 rounded-2xl border border-pink-400/30 bg-gradient-to-r from-pink-500/10 via-purple-500/10 to-sky-500/10">
                 <div className="text-center mb-3">
-                  <div className="text-lg font-bold text-pink-400 mb-1">🗓️ Estimated Launch: January 15, 2026</div>
+                  <div className="text-lg font-bold text-pink-400 mb-1">🗓️ Estimated Launch: February 18, 2026</div>
                   <div className="text-white/60 text-sm">Join us for the future of mobile advertising</div>
                   <div className="text-white/50 text-xs mt-1">*30-day written notice provided if launch date changes</div>
                 </div>
@@ -409,7 +409,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Professional Mobile Billboard Advertising</h2>
-              <p className="mt-3 text-white/80 max-w-2xl">Start advertising with our professional mobile billboard platform. During our <strong>pre-launch testing phase, all campaigns receive FREE impressions and high-frequency placement</strong> until our January 2026 launch. Bring your ads — we'll handle design support if you need it.</p>
+              <p className="mt-3 text-white/80 max-w-2xl">Start advertising with our professional mobile billboard platform. During our <strong>pre-launch testing phase, all campaigns receive FREE impressions and high-frequency placement</strong> until our February 2026 launch. Bring your ads — we'll handle design support if you need it.</p>
             </div>
             <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 text-white font-semibold">
               I'm interested <ArrowRight size={18}/>
@@ -447,7 +447,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Professional Mobile Billboard Advertising</h2>
-              <p className="mt-3 text-white/80 max-w-2xl">Start advertising with our professional mobile billboard platform. During our <strong>pre-launch testing phase, all campaigns receive FREE impressions and high-frequency placement</strong> until our January 2026 launch. Bring your ads — we’ll handle design support if you need it.</p>
+              <p className="mt-3 text-white/80 max-w-2xl">Start advertising with our professional mobile billboard platform. During our <strong>pre-launch testing phase, all campaigns receive FREE impressions and high-frequency placement</strong> until our February 2026 launch. Bring your ads — we’ll handle design support if you need it.</p>
             </div>
             <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 text-white font-semibold">
               I’m interested <ArrowRight size={18}/>

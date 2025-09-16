@@ -224,7 +224,7 @@ export default function PricingPage() {
           <div className="max-w-3xl mx-auto p-4 rounded-2xl border border-purple-400/30 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10">
             <div className="text-center">
               <h3 className="text-lg font-bold text-purple-400 mb-1">📊 Network Status & Growth Plan</h3>
-              <div className="text-pink-400 font-semibold mb-1">🗓️ Estimated Launch: January 15, 2026</div>
+              <div className="text-pink-400 font-semibold mb-1">🗓️ Estimated Launch: February 18, 2026</div>
               <div className="text-white/50 text-xs mb-3">*30-day written notice provided if launch date changes</div>
               <div className="grid md:grid-cols-4 gap-4 text-sm">
                 <div className="text-center">
@@ -358,7 +358,7 @@ export default function PricingPage() {
             
             {/* Current Pre-Launch Phase */}
             <div className="bg-green-500/10 border border-green-400/30 rounded-lg p-4 mb-4">
-              <h5 className="text-green-400 font-bold mb-2">🚀 PRE-LAUNCH PHASE (Now - January 2026):</h5>
+              <h5 className="text-green-400 font-bold mb-2">🚀 PRE-LAUNCH PHASE (Now - February 2026):</h5>
               <div className="text-gray-200">
                 <p><strong>Cost:</strong> <span className="text-green-400 font-bold text-xl">$0 (FREE)</span></p>
                 <p><strong>What you get:</strong> FREE impressions + high-frequency placement for testing</p>
@@ -368,7 +368,7 @@ export default function PricingPage() {
 
             {/* Post-Launch Example */}
             <div className="bg-blue-500/10 border border-blue-400/30 rounded-lg p-4">
-              <h5 className="text-blue-400 font-bold mb-2">📈 POST-LAUNCH EXAMPLE (After January 2026):</h5>
+              <h5 className="text-blue-400 font-bold mb-2">📈 POST-LAUNCH EXAMPLE (After February 2026):</h5>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2 text-gray-200">
                   <p><strong>Content:</strong> 10-second video ($0.070 per impression)</p>
@@ -572,7 +572,7 @@ export default function PricingPage() {
             <div className="space-y-3 text-sm text-orange-100">
               <p><strong>CPI Estimates:</strong> All impression counts and CPI calculations are estimates based on historical data and may vary significantly based on actual traffic conditions, route changes, and market factors.</p>
               <p><strong>Service Availability:</strong> Campaign availability subject to driver network capacity and route scheduling. Premium locations and peak hour slots limited and allocated on first-come, first-served basis.</p>
-              <p><strong>Pre-Launch Testing Phase:</strong> During our current testing phase (until January 2026 launch), all campaigns receive FREE impressions with high-frequency placement. Price lock guarantees and campaign credits for qualifying early customers will be honored as promised.</p>
+              <p><strong>Pre-Launch Testing Phase:</strong> During our current testing phase (until February 2026 launch), all campaigns receive FREE impressions with high-frequency placement. Price lock guarantees and campaign credits for qualifying early customers will be honored as promised.</p>
               <p><strong>Pricing Changes:</strong> General pricing and service terms subject to change upon full market launch with 30-day written notice, except for existing contractual commitments which remain binding.</p>
             </div>
           </div>

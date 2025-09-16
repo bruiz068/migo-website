@@ -27,7 +27,7 @@ export default function FAQPage() {
         },
         {
           question: "When will the service launch?",
-          answer: "Our estimated launch date is January 15, 2026. We're currently testing with 3 tablets and will provide 30-day written notice if any timeline changes are needed. We'll launch with 10 tablets and scale to 50 by year 2."
+          answer: "Our estimated launch date is February 18, 2026. We're currently testing with 3 tablets and will provide 30-day written notice if any timeline changes are needed. We'll launch with 10 tablets and scale to 50 by year 2."
         },
         {
           question: "What areas will be covered?",
@@ -162,7 +162,7 @@ export default function FAQPage() {
       faqs: [
         {
           question: "What's the growth timeline?",
-          answer: "Phase 1: Testing with 3 tablets (current). Phase 2: Launch with 10 tablets (Jan 2026). Phase 3: Scale to 50 tablets (2027). Phase 4: Expand to 100+ tablets citywide."
+          answer: "Phase 1: Testing with 3 tablets (current). Phase 2: Launch with 10 tablets (Feb 2026). Phase 3: Scale to 50 tablets (2027). Phase 4: Expand to 100+ tablets citywide."
         },
         {
           question: "How do I secure pre-launch pricing?",
@@ -170,7 +170,7 @@ export default function FAQPage() {
         },
         {
           question: "What if the launch date changes?",
-          answer: "We'll provide minimum 30-day written notice of any timeline changes. Our current testing phase is progressing well, and we're confident in the January 2026 estimated launch."
+          answer: "We'll provide minimum 30-day written notice of any timeline changes. Our current testing phase is progressing well, and we're confident in the February 2026 estimated launch."
         },
         {
           question: "Will you expand to other cities?",

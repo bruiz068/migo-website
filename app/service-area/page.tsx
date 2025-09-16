@@ -6,7 +6,11 @@ import { ArrowLeft, MapPin, Navigation, Clock, TrendingUp, Users, Building, Car,
 export default function ServiceAreaPage() {
   const currentCoverage = [
     { area: "Downtown Phoenix", status: "Active", routes: "Business District, Convention Center", traffic: "High" },
-    { area: "Camelback Corridor", status: "Active", routes: "Medical Centers, Offices", traffic: "Medium-High" }
+    { area: "Camelback Corridor", status: "Active", routes: "Medical Centers, Offices", traffic: "Medium-High" },
+    { area: "Scottsdale", status: "Testing", routes: "Old Town, Fashion Square", traffic: "High" },
+    { area: "Tempe", status: "Testing", routes: "ASU Campus, Mill Avenue", traffic: "High" },
+    { area: "Mesa", status: "Testing", routes: "Main Street, Superstition Springs", traffic: "Medium-High" },
+    { area: "Peoria", status: "Testing", routes: "Sports Complex, P83 District", traffic: "Medium" }
   ];
 
   const expansionPlan = [
@@ -22,7 +26,7 @@ export default function ServiceAreaPage() {
     { 
       phase: "Launch", 
       timeline: "Official Launch", 
-      areas: ["Phoenix Metro Area", "Scottsdale", "Tempe", "Mesa"], 
+      areas: ["Phoenix Metro Area", "Scottsdale", "Tempe", "Mesa", "Chandler", "Glendale", "Peoria", "Gilbert"], 
       tablets: 10,
       color: "text-blue-400",
       bgColor: "bg-blue-400/10",
@@ -31,7 +35,7 @@ export default function ServiceAreaPage() {
     { 
       phase: "Year 1", 
       timeline: "6-Month Expansion", 
-      areas: ["Tucson", "Flagstaff", "Extended Metro"], 
+      areas: ["Surprise", "Avondale", "Goodyear", "Buckeye", "Queen Creek", "Fountain Hills", "Paradise Valley"], 
       tablets: 25,
       color: "text-purple-400",
       bgColor: "bg-purple-400/10",
@@ -40,7 +44,7 @@ export default function ServiceAreaPage() {
     { 
       phase: "Year 1 Goal", 
       timeline: "12-Month Target", 
-      areas: ["Statewide Coverage", "All Major Cities", "Key Transit Routes"], 
+      areas: ["Tucson", "Flagstaff", "Sedona", "Prescott", "Yuma", "Statewide Coverage"], 
       tablets: "50+",
       color: "text-pink-400",
       bgColor: "bg-pink-400/10",
@@ -310,12 +314,12 @@ export default function ServiceAreaPage() {
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-lg font-bold text-blue-400 mb-1">Pre-Launch Testing</div>
-                  <div className="text-white/80">Current - January 2026</div>
+                  <div className="text-white/80">Current - February 2026</div>
                   <div className="text-sm text-white/60 mt-1">3 tablets validating system</div>
                 </div>
                 <div>
                   <div className="text-lg font-bold text-purple-400 mb-1">Estimated Launch</div>
-                  <div className="text-white/80">January 15, 2026</div>
+                  <div className="text-white/80">February 18, 2026</div>
                   <div className="text-sm text-white/60 mt-1">10 tablets initial deployment</div>
                 </div>
                 <div>

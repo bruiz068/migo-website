@@ -118,7 +118,7 @@ export default function DriverEarnings() {
             <div className="mt-6 p-4 rounded-2xl border border-sky-400/30 bg-gradient-to-r from-sky-500/10 via-purple-500/10 to-pink-500/10 max-w-2xl mx-auto">
               <div className="text-center">
                 <h3 className="text-lg font-bold text-sky-400 mb-1">🚀 Be a Founding Driver</h3>
-                <div className="text-pink-400 font-semibold mb-1">🗓️ Estimated Launch: January 15, 2026</div>
+                <div className="text-pink-400 font-semibold mb-1">🗓️ Estimated Launch: February 18, 2026</div>
                 <div className="text-white/50 text-xs mb-3">*30-day written notice provided if launch date changes</div>
                 <div className="flex flex-col sm:flex-row gap-4 text-sm justify-center">
                   <span className="text-white/80">📊 Testing: 3 tablets</span>
