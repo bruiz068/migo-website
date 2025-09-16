@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, User, Target, Lightbulb, TrendingUp, Shield, Award, Building, Phone, Mail, Calendar, MapPin } from "lucide-react";
+import { ArrowLeft, User, Target, Lightbulb, TrendingUp, Shield, Award, Building, Phone, Mail, Calendar, MapPin, Menu, X } from "lucide-react";
 
 export default function AboutPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   const milestones = [
     { 
       date: "2024", 
@@ -81,20 +84,47 @@ export default function AboutPage() {
               <span className="font-extrabold tracking-tight text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Advertisement</span>
             </Link>
           </div>
-            <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
-              <Link href="/pricing" className="hover:text-pink-400 font-semibold">Pricing</Link>
-              <Link href="/ad-specs" className="hover:text-purple-400 font-semibold">Ad Specs</Link>
-              <Link href="/driver-earnings" className="hover:text-sky-400 font-semibold">Driver Earnings</Link>
-              <Link href="/service-area" className="hover:text-green-400 font-semibold">Service Area</Link>
-              <Link href="/testimonials" className="hover:text-yellow-400 font-semibold">Testimonials</Link>
-              <Link href="/faq" className="hover:text-cyan-400 font-semibold">FAQ</Link>
-              <Link href="/contact" className="hover:text-orange-400 font-semibold">Contact</Link>
-              <Link href="/" className="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
+          
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
+            <Link href="/pricing" className="hover:text-pink-400 font-semibold">Pricing</Link>
+            <Link href="/ad-specs" className="hover:text-purple-400 font-semibold">Ad Specs</Link>
+            <Link href="/driver-earnings" className="hover:text-sky-400 font-semibold">Driver Earnings</Link>
+            <Link href="/service-area" className="hover:text-green-400 font-semibold">Service Area</Link>
+            <Link href="/faq" className="hover:text-cyan-400 font-semibold">FAQ</Link>
+            <Link href="/contact" className="hover:text-orange-400 font-semibold">Contact</Link>
+            <Link href="/" className="flex items-center gap-2 text-white/60 hover:text-white transition-colors">
+              <ArrowLeft size={16} />
+              Home
+            </Link>
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden p-2 text-white/80 hover:text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-white/10 bg-neutral-900/95 backdrop-blur">
+            <nav className="px-6 py-4 space-y-3">
+              <Link href="/pricing" className="block text-white/80 hover:text-pink-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
+              <Link href="/ad-specs" className="block text-white/80 hover:text-purple-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Ad Specs</Link>
+              <Link href="/driver-earnings" className="block text-white/80 hover:text-sky-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Driver Earnings</Link>
+              <Link href="/service-area" className="block text-white/80 hover:text-green-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Service Area</Link>
+              <Link href="/faq" className="block text-white/80 hover:text-cyan-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+              <Link href="/contact" className="block text-white/80 hover:text-orange-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+              <Link href="/" className="flex items-center gap-2 text-white/60 hover:text-white py-2" onClick={() => setMobileMenuOpen(false)}>
                 <ArrowLeft size={16} />
                 Home
               </Link>
             </nav>
-        </div>
+          </div>
+        )}
       </header>
 
       <div className="container mx-auto px-6 py-16 max-w-6xl">

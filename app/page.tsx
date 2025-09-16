@@ -2,13 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowRight, Smartphone, QrCode, MapPin, Clock, Rocket, Sparkles, DollarSign, Mail, ShieldCheck } from "lucide-react";
+import { ArrowRight, Smartphone, QrCode, MapPin, Clock, Rocket, Sparkles, DollarSign, Mail, ShieldCheck, Menu, X } from "lucide-react";
 
 export default function Page() {
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", company: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">("idle");
   const [error, setError] = useState<string>("");
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Slideshow ads data - DEMO EXAMPLES ONLY
   const ads = [
@@ -97,11 +98,13 @@ export default function Page() {
               }}
             />
             <span className="font-extrabold tracking-tight text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Advertisement</span>
-            <div className="hidden flex items-center gap-3">
+            <div className="hidden items-center gap-3">
               <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-pink-500 via-purple-500 to-sky-400 shadow-lg shadow-pink-500/30" />
               <span className="font-extrabold tracking-tight text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Migo Advertisement</span>
             </div>
           </div>
+          
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <Link href="/pricing" className="hover:text-pink-400 font-semibold">Pricing</Link>
             <Link href="/ad-specs" className="hover:text-purple-400 font-semibold">Ad Specs</Link>
@@ -113,7 +116,32 @@ export default function Page() {
             <a href="#features" className="hover:text-purple-400">Features</a>
             <a href="#contact" className="hover:text-purple-400">Contact</a>
           </nav>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden p-2 text-white/80 hover:text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-white/10 bg-neutral-900/95 backdrop-blur">
+            <nav className="px-6 py-4 space-y-3">
+              <Link href="/pricing" className="block text-white/80 hover:text-pink-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
+              <Link href="/ad-specs" className="block text-white/80 hover:text-purple-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Ad Specs</Link>
+              <Link href="/driver-earnings" className="block text-white/80 hover:text-sky-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Driver Earnings</Link>
+              <Link href="/service-area" className="block text-white/80 hover:text-green-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>Service Area</Link>
+              <Link href="/about" className="block text-white/80 hover:text-blue-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>About</Link>
+              <Link href="/faq" className="block text-white/80 hover:text-cyan-400 font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
+              <a href="#video" className="block text-white/80 hover:text-pink-400 py-2" onClick={() => setMobileMenuOpen(false)}>Demo</a>
+              <a href="#features" className="block text-white/80 hover:text-purple-400 py-2" onClick={() => setMobileMenuOpen(false)}>Features</a>
+              <a href="#contact" className="block text-white/80 hover:text-purple-400 py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* EXCLUSIVE PRELAUNCH OFFER BANNER */}
