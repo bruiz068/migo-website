@@ -13,7 +13,7 @@ export default function ServiceAreaPage() {
     { 
       phase: "Phase 1", 
       timeline: "Current Testing", 
-      areas: ["Downtown Phoenix", "Camelback Corridor", "Central Phoenix"], 
+      areas: ["State Approved Metro-Wide", "All Phoenix Areas", "Testing Phase"], 
       tablets: 3,
       color: "text-green-400",
       bgColor: "bg-green-400/10",
@@ -119,7 +119,7 @@ export default function ServiceAreaPage() {
                 <Navigation size={24} />
                 Current Testing Phase
               </h2>
-              <p className="text-white/80">3 tablets actively testing system reliability and performance in high-traffic areas</p>
+              <p className="text-white/80">3 tablets actively testing system reliability and performance - state approved to operate in all metro areas</p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-6">
