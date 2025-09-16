@@ -256,7 +256,7 @@ export default function Page() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-sky-400">🎯 VISION:</span>
-                  <span className="text-white/80">100+ tablets citywide</span>
+                  <span className="text-white/80">100+ tablets nationwide</span>
                 </div>
               </div>
             </div>
