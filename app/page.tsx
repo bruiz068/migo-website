@@ -190,7 +190,7 @@ export default function Page() {
               Turn every rideshare <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">ride</span> into a customer.
             </h1>
             <p className="mt-5 text-white/80 text-lg max-w-xl">
-              We design ads, build websites & apps, and showcase your brand on our in-car <strong>Mobile Billboard</strong> network.
+              We provide advertising platform access and professional ad design services, and showcase your brand on our in-car <strong>Mobile Billboard</strong> network.
             </p>
             
             {/* PRELAUNCH OFFER & Growth Stats */}
@@ -411,7 +411,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">Professional Mobile Billboard Advertising</h2>
-              <p className="mt-3 text-white/80 max-w-2xl">Start advertising with our professional mobile billboard platform. During our <strong>pre-launch testing phase, all campaigns receive FREE impressions and high-frequency placement</strong> until our February 2026 launch. Bring your ads — we'll handle design support if you need it.</p>
+              <p className="mt-3 text-white/80 max-w-2xl">Start advertising with our professional mobile billboard platform. During our <strong>pre-launch testing phase, all campaigns receive FREE impressions and high-frequency placement</strong> until our February 2026 launch. Bring your ads or let us design them for you — we'll provide optimization guidance.</p>
             </div>
             <a href="#contact" className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-gradient-to-r from-pink-500 via-purple-500 to-sky-500 text-white font-semibold">
               I'm interested <ArrowRight size={18}/>

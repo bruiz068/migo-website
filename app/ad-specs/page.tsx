@@ -405,7 +405,7 @@ export default function AdSpecsPage() {
           <div className="bg-gradient-to-r from-gray-900 to-black border border-blue-500/30 rounded-2xl p-12">
             <h3 className="text-3xl font-bold text-white mb-6">Need Help with Your Ad Design? 🎨</h3>
             <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-              Our design team can help create professional mobile billboard ads optimized for maximum impact. 
+              Our design team can create professional mobile billboard ads optimized for maximum impact. 
               Contact us for custom design services or technical assistance.
             </p>
 

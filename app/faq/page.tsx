@@ -81,7 +81,7 @@ export default function FAQPage() {
         },
         {
           question: "What ad formats are supported?",
-          answer: "We support high-resolution images, videos, and interactive QR code campaigns. Ads are optimized for mobile viewing with bright, eye-catching displays. Our creative team can help design effective advertisements."
+          answer: "We support high-resolution images, videos, and interactive QR code campaigns. Ads are optimized for mobile viewing with bright, eye-catching displays. Our creative team offers professional ad design services and can help create effective advertisements."
         },
         {
           question: "How do I track ad performance?",

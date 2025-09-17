@@ -27,7 +27,27 @@ export default function PricingPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
 
-  // If not authenticated, show password protection
+  // If not authenticated, show                       <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+              <h4 className="font-bold text-green-400 mb-3">🎯 Why Pay Google Ads Rates for QR Scans?</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm">
+                <div>• <strong>Same Intent Level:</strong> QR scanners show active purchase interest</div>
+                <div>• <strong>Local Targeting:</strong> Reach customers in your exact service area</div>
+                <div>• <strong>Physical Presence:</strong> More memorable than digital-only ads</div>
+                <div>• <strong>No Ad Blockers:</strong> Mobile billboards can't be blocked or skipped</div>
+                <div>• <strong>Competitive CPC:</strong> Match Google Ads without keyword competition</div>
+                <div>• <strong>Higher Conversion:</strong> Physical-to-digital bridge builds more trust</div>
+              </div>
+            </div>assName="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+              <h4 className="font-bold text-green-400 mb-3">🎯 Why Pay Google Ads Rates for QR Scans?</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm">
+                <div>• <strong>Same Intent Level:</strong> QR scanners show active purchase interest</div>
+                <div>• <strong>Local Targeting:</strong> Reach customers in your exact service area</div>
+                <div>• <strong>Physical Presence:</strong> More memorable than digital-only ads</div>
+                <div>• <strong>No Ad Blockers:</strong> Mobile billboards can't be blocked or skipped</div>
+                <div>• <strong>Competitive CPC:</strong> Match Google Ads without keyword competition</div>
+                <div>• <strong>Higher Conversion:</strong> Physical-to-digital bridge builds more trust</div>
+              </div>
+            </div>protection
   if (!isAuthenticated) {
     return <PasswordProtection onAuthenticated={() => setIsAuthenticated(true)} />;
   }
@@ -144,6 +164,11 @@ export default function PricingPage() {
       service: "QR Code Setup & Landing Page",
       description: "Custom QR code with mobile-optimized landing page",
       price: "$50 - $100"
+    },
+    {
+      service: "QR Code Interaction Tracking",
+      description: "Premium lead generation - pay per qualified interaction (competitive with Google Ads)",
+      price: "$1.00 - $3.00 per scan"
     },
     {
       service: "Campaign Analytics & Reporting",
@@ -515,6 +540,74 @@ export default function PricingPage() {
                 <p className="text-gray-300 text-sm">{service.description}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* QR Code Interaction Pricing */}
+        <section className="mb-20">
+          <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            🔗 QR Code Interaction Pricing
+          </h2>
+          
+          <div className="bg-gray-900 border border-blue-500/30 rounded-2xl p-8 max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-blue-400 mb-4">Google Ads Competitive Pricing</h3>
+              <p className="text-gray-300 text-lg">
+                High-intent QR scans from mobile billboards - same value as Google Ads clicks at competitive rates
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-black border border-blue-500/30 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-blue-400 mb-2">$1.00</div>
+                <div className="text-gray-300 text-sm mb-3">per qualified scan</div>
+                <h4 className="font-bold text-white mb-2">Standard Lead Gen</h4>
+                <ul className="text-gray-300 text-sm space-y-1">
+                  <li>• QR scan tracking</li>
+                  <li>• Lead qualification</li>
+                  <li>• Basic conversion data</li>
+                  <li>• Landing page analytics</li>
+                </ul>
+              </div>
+
+              <div className="bg-black border-2 border-blue-400 rounded-xl p-6 text-center relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-400 text-black px-3 py-1 rounded-full text-xs font-bold">BEST VALUE</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">$2.00</div>
+                <div className="text-gray-300 text-sm mb-3">per qualified scan</div>
+                <h4 className="font-bold text-white mb-2">Premium Lead Gen</h4>
+                <ul className="text-gray-300 text-sm space-y-1">
+                  <li>• Advanced lead scoring</li>
+                  <li>• Demographic profiling</li>
+                  <li>• User journey mapping</li>
+                  <li>• Geographic heatmaps</li>
+                  <li>• A/B testing data</li>
+                </ul>
+              </div>
+
+              <div className="bg-black border border-purple-500/50 rounded-xl p-6 text-center">
+                <div className="text-3xl font-bold text-purple-400 mb-2">$3.00</div>
+                <div className="text-gray-300 text-sm mb-3">per qualified scan</div>
+                <h4 className="font-bold text-white mb-2">Enterprise Lead Gen</h4>
+                <ul className="text-gray-300 text-sm space-y-1">
+                  <li>• Enterprise lead intelligence</li>
+                  <li>• CRM & marketing automation</li>
+                  <li>• Custom attribution models</li>
+                  <li>• Real-time lead alerts</li>
+                  <li>• Advanced segmentation</li>
+                  <li>• Dedicated account support</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+              <h4 className="font-bold text-blue-400 mb-3">� Premium Value Proposition:</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm">
+                <div>• <strong>High-Intent Users:</strong> QR scanners are 5x more likely to purchase</div>
+                <div>• <strong>Qualified Leads:</strong> Better than random impressions or clicks</div>
+                <div>• <strong>Cheaper than Google Ads:</strong> $0.25-$0.50 vs $1-5+ per click</div>
+                <div>• <strong>Physical-to-Digital Bridge:</strong> Unique mobile billboard advantage</div>
+              </div>
+            </div>
           </div>
         </section>
 

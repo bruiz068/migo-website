@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Lock, Eye, EyeOff } from "lucide-react";
 
 interface PasswordProtectionProps {
@@ -15,6 +15,23 @@ export default function PasswordProtection({ onAuthenticated }: PasswordProtecti
 
   // Set your password here - you can change this to whatever you want
   const CORRECT_PASSWORD = "migo2025";
+
+  // Check for password in URL parameters
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlPassword = urlParams.get('password');
+      if (urlPassword) {
+        setPassword(urlPassword);
+        // Auto-submit if password matches
+        if (urlPassword === CORRECT_PASSWORD) {
+          setTimeout(() => {
+            onAuthenticated();
+          }, 500);
+        }
+      }
+    }
+  }, [onAuthenticated]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
