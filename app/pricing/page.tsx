@@ -27,27 +27,7 @@ export default function PricingPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
 
-  // If not authenticated, show                       <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
-              <h4 className="font-bold text-green-400 mb-3">🎯 Why Pay Google Ads Rates for QR Scans?</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm">
-                <div>• <strong>Same Intent Level:</strong> QR scanners show active purchase interest</div>
-                <div>• <strong>Local Targeting:</strong> Reach customers in your exact service area</div>
-                <div>• <strong>Physical Presence:</strong> More memorable than digital-only ads</div>
-                <div>• <strong>No Ad Blockers:</strong> Mobile billboards can't be blocked or skipped</div>
-                <div>• <strong>Competitive CPC:</strong> Match Google Ads without keyword competition</div>
-                <div>• <strong>Higher Conversion:</strong> Physical-to-digital bridge builds more trust</div>
-              </div>
-            </div>assName="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
-              <h4 className="font-bold text-green-400 mb-3">🎯 Why Pay Google Ads Rates for QR Scans?</h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-300 text-sm">
-                <div>• <strong>Same Intent Level:</strong> QR scanners show active purchase interest</div>
-                <div>• <strong>Local Targeting:</strong> Reach customers in your exact service area</div>
-                <div>• <strong>Physical Presence:</strong> More memorable than digital-only ads</div>
-                <div>• <strong>No Ad Blockers:</strong> Mobile billboards can't be blocked or skipped</div>
-                <div>• <strong>Competitive CPC:</strong> Match Google Ads without keyword competition</div>
-                <div>• <strong>Higher Conversion:</strong> Physical-to-digital bridge builds more trust</div>
-              </div>
-            </div>protection
+  // If not authenticated, show password protection
   if (!isAuthenticated) {
     return <PasswordProtection onAuthenticated={() => setIsAuthenticated(true)} />;
   }
