@@ -373,7 +373,7 @@ export default function PricingPage() {
               <div className="text-gray-200">
                 <p><strong>Cost:</strong> <span className="text-green-400 font-bold text-xl">$0 (FREE)</span></p>
                 <p><strong>What you get:</strong> FREE impressions + high-frequency placement for testing</p>
-                <p><strong>Duration:</strong> Campaign runs until you're satisfied with results</p>
+                <p><strong>Duration:</strong> Free campaigns run until our January 15, 2026 launch</p>
               </div>
             </div>
 
