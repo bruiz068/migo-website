@@ -27,7 +27,7 @@ export default function FAQPage() {
         },
         {
           question: "When will the service launch?",
-          answer: "Our estimated launch date is February 18, 2026. We're currently testing with 3 tablets and will provide 30-day written notice if any timeline changes are needed. We'll launch with 10 tablets and scale to 50 by year 2."
+          answer: "Our estimated launch date is January 15, 2026. We're currently testing with 3 tablets and will provide 30-day written notice if any timeline changes are needed. We'll launch with 10 tablets and scale to 50 by year 2."
         },
         {
           question: "What areas will be covered?",
@@ -170,7 +170,7 @@ export default function FAQPage() {
         },
         {
           question: "What if the launch date changes?",
-          answer: "We'll provide minimum 30-day written notice of any timeline changes. Our current testing phase is progressing well, and we're confident in the February 2026 estimated launch."
+          answer: "We'll provide minimum 30-day written notice of any timeline changes. Our current testing phase is progressing well, and we're confident in the January 2026 estimated launch."
         },
         {
           question: "Will you expand to other cities?",

@@ -30,7 +30,7 @@ export default function AboutPage() {
       color: "text-green-400"
     },
     { 
-      date: "February 2026", 
+      date: "January 2026", 
       title: "Estimated Launch", 
       description: "Full service launch with 10 tablets across Phoenix metro area",
       icon: TrendingUp,

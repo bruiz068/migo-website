@@ -170,7 +170,7 @@ export default function AdSpecsPage() {
           <div className="max-w-3xl mx-auto p-4 rounded-2xl border border-blue-400/30 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10">
             <div className="text-center">
               <h3 className="text-lg font-bold text-blue-400 mb-1">🎯 Network Capacity & Reach</h3>
-              <div className="text-pink-400 font-semibold mb-1">🗓️ Estimated Launch: February 18, 2026</div>
+              <div className="text-pink-400 font-semibold mb-1">🗓️ Estimated Launch: January 15, 2026</div>
               <div className="text-white/50 text-xs mb-3">*30-day written notice provided if launch date changes</div>
               <div className="grid md:grid-cols-4 gap-4 text-sm">
                 <div className="text-center">

@@ -114,7 +114,7 @@ export default function TermsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-pink-400 mb-4">6. Launch Timeline</h2>
             <div className="text-white/80 space-y-3">
-              <p><strong>Estimated Launch:</strong> February 18, 2026 (subject to change)</p>
+              <p><strong>Estimated Launch:</strong> January 15, 2026 (subject to change)</p>
               <p><strong>Notice Policy:</strong> Minimum 30-day written notice provided if launch date changes.</p>
               <p><strong>Pre-Launch:</strong> Testing phase with 3 tablets currently active.</p>
             </div>

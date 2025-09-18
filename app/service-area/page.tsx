@@ -314,12 +314,12 @@ export default function ServiceAreaPage() {
               <div className="grid md:grid-cols-3 gap-6 text-center">
                 <div>
                   <div className="text-lg font-bold text-blue-400 mb-1">Pre-Launch Testing</div>
-                  <div className="text-white/80">Current - February 2026</div>
+                  <div className="text-white/80">Current - January 2026</div>
                   <div className="text-sm text-white/60 mt-1">3 tablets validating system</div>
                 </div>
                 <div>
                   <div className="text-lg font-bold text-purple-400 mb-1">Estimated Launch</div>
-                  <div className="text-white/80">February 18, 2026</div>
+                  <div className="text-white/80">January 15, 2026</div>
                   <div className="text-sm text-white/60 mt-1">10 tablets initial deployment</div>
                 </div>
                 <div>
