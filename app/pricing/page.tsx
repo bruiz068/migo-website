@@ -136,6 +136,12 @@ export default function PricingPage() {
 
   const addOnServices = [
     {
+      service: "Campaign Kickoff Fee",
+      description: "One-time setup fee covering account creation, content review, campaign configuration, and platform onboarding",
+      price: "$200",
+      required: true
+    },
+    {
       service: "Professional Content Creation",
       description: "Custom videos, animations & graphics (see Complete Advertising Solution section above)",
       price: "$200 - $500"
@@ -387,6 +393,7 @@ export default function PricingPage() {
               </div>
               <div className="mt-3 text-sm text-gray-400">
                 <p>💡 <em>No hourly fees - you only pay for actual impressions delivered to passengers</em></p>
+                <p>📋 <em>Plus one-time $200 Campaign Kickoff Fee for account setup and platform onboarding</em></p>
               </div>
             </div>
           </div>
@@ -512,10 +519,13 @@ export default function PricingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {addOnServices.map((service, index) => (
-              <div key={index} className="bg-gray-900 border border-gray-700 rounded-xl p-6 hover:border-green-400 transition-colors">
+              <div key={index} className={`${service.required ? 'bg-gradient-to-br from-blue-900/40 to-purple-900/40 border-blue-400' : 'bg-gray-900'} border ${service.required ? 'border-blue-400' : 'border-gray-700'} rounded-xl p-6 hover:border-green-400 transition-colors ${service.required ? 'ring-2 ring-blue-400/30' : ''}`}>
                 <div className="flex justify-between items-start mb-3">
-                  <h4 className="text-lg font-bold text-white">{service.service}</h4>
-                  <span className="text-green-400 font-bold text-lg">{service.price}</span>
+                  <div>
+                    <h4 className="text-lg font-bold text-white">{service.service}</h4>
+                    {service.required && <span className="text-blue-400 text-xs font-semibold">REQUIRED</span>}
+                  </div>
+                  <span className={`${service.required ? 'text-blue-400' : 'text-green-400'} font-bold text-lg`}>{service.price}</span>
                 </div>
                 <p className="text-gray-300 text-sm">{service.description}</p>
               </div>
