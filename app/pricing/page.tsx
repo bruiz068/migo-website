@@ -142,6 +142,12 @@ export default function PricingPage() {
       required: true
     },
     {
+      service: "Ad Resizing & Screen Optimization",
+      description: "Professional resizing and optimization of your existing ads to fit our mobile billboard screens perfectly",
+      price: "$50",
+      foundingPartnerFree: true
+    },
+    {
       service: "Professional Content Creation",
       description: "Custom videos, animations & graphics (see Complete Advertising Solution section above)",
       price: "$200 - $500"
@@ -524,8 +530,18 @@ export default function PricingPage() {
                   <div>
                     <h4 className="text-lg font-bold text-white">{service.service}</h4>
                     {service.required && <span className="text-blue-400 text-xs font-semibold">REQUIRED</span>}
+                    {service.foundingPartnerFree && <span className="text-green-400 text-xs font-semibold">FREE FOR FIRST 50</span>}
                   </div>
-                  <span className={`${service.required ? 'text-blue-400' : 'text-green-400'} font-bold text-lg`}>{service.price}</span>
+                  <div className="text-right">
+                    {service.foundingPartnerFree ? (
+                      <>
+                        <span className="text-gray-400 line-through text-sm">{service.price}</span>
+                        <span className="text-green-400 font-bold text-lg ml-2">FREE</span>
+                      </>
+                    ) : (
+                      <span className={`${service.required ? 'text-blue-400' : 'text-green-400'} font-bold text-lg`}>{service.price}</span>
+                    )}
+                  </div>
                 </div>
                 <p className="text-gray-300 text-sm">{service.description}</p>
               </div>
