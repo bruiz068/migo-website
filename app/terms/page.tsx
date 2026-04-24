@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
-import { ArrowLeft, Scale, ShieldCheck, FileText } from "lucide-react";
+import { ArrowLeft, Scale, ShieldCheck, FileText, MessageSquare, CreditCard } from "lucide-react";
 
 export default function TermsPage() {
   return (
@@ -11,9 +11,9 @@ export default function TermsPage() {
         <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-              <img 
-                src="https://i.imgur.com/clZNuAZ.png?v=2" 
-                alt="Migo Logo" 
+              <img
+                src="https://i.imgur.com/clZNuAZ.png?v=2"
+                alt="Migo Logo"
                 className="h-12 w-auto"
               />
               <span className="text-xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
@@ -34,174 +34,370 @@ export default function TermsPage() {
           <div className="inline-flex items-center gap-3 mb-4">
             <Scale className="text-purple-400" size={32} />
             <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Terms of Service
+              Terms &amp; Conditions
             </h1>
           </div>
-          <p className="text-white/60 text-lg">
-            Last updated: September 11, 2025
+          <p className="text-white/60 text-lg">Last updated: April 24, 2026</p>
+          <p className="text-white/50 text-sm mt-1">Effective: April 24, 2026</p>
+        </div>
+
+        {/* Agreement Banner */}
+        <div className="bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10 rounded-2xl border border-purple-400/30 p-6 mb-8">
+          <div className="flex items-center gap-2 mb-3">
+            <ShieldCheck className="text-green-400" size={20} />
+            <h2 className="text-xl font-semibold text-white mb-0">Agreement to These Terms</h2>
+          </div>
+          <p className="text-white/80 mb-0">
+            By visiting migonow.com, creating an account, submitting a contact form, or using any Migo Advertisement service, you agree to be bound by these Terms &amp; Conditions and our <Link href="/privacy" className="text-purple-400 hover:text-purple-300 underline">Privacy Policy</Link>. If you do not agree, do not use our website or services. These Terms apply to U.S. residents only.
           </p>
         </div>
 
-        {/* Terms Content */}
+        {/* Table of Contents */}
+        <div className="bg-gray-900/50 rounded-xl border border-white/10 p-5 mb-10">
+          <h2 className="text-lg font-semibold text-white/80 mb-3">Table of Contents</h2>
+          <ol className="list-decimal pl-5 space-y-1 text-sm text-purple-300">
+            <li><a href="#services" className="hover:text-purple-200 transition-colors">Services Description</a></li>
+            <li><a href="#accounts" className="hover:text-purple-200 transition-colors">Accounts and Eligibility</a></li>
+            <li><a href="#advertiser-terms" className="hover:text-purple-200 transition-colors">Advertiser Terms</a></li>
+            <li><a href="#billing" className="hover:text-purple-200 transition-colors">Fees, Billing, and Refund Policy</a></li>
+            <li><a href="#driver-terms" className="hover:text-purple-200 transition-colors">Driver Terms</a></li>
+            <li><a href="#equipment" className="hover:text-purple-200 transition-colors">Equipment and Liability</a></li>
+            <li><a href="#sms-consent" className="hover:text-purple-200 transition-colors">SMS Marketing Consent</a></li>
+            <li><a href="#prohibited" className="hover:text-purple-200 transition-colors">Prohibited Uses</a></li>
+            <li><a href="#ip" className="hover:text-purple-200 transition-colors">Intellectual Property</a></li>
+            <li><a href="#qr" className="hover:text-purple-200 transition-colors">QR Code Data Collection</a></li>
+            <li><a href="#indemnification" className="hover:text-purple-200 transition-colors">Indemnification</a></li>
+            <li><a href="#liability" className="hover:text-purple-200 transition-colors">Limitation of Liability</a></li>
+            <li><a href="#disclaimer" className="hover:text-purple-200 transition-colors">Disclaimers</a></li>
+            <li><a href="#termination" className="hover:text-purple-200 transition-colors">Termination</a></li>
+            <li><a href="#disputes" className="hover:text-purple-200 transition-colors">Dispute Resolution and Arbitration</a></li>
+            <li><a href="#governing-law" className="hover:text-purple-200 transition-colors">Governing Law</a></li>
+            <li><a href="#modifications" className="hover:text-purple-200 transition-colors">Modifications to Terms</a></li>
+            <li><a href="#contact-terms" className="hover:text-purple-200 transition-colors">Contact Information</a></li>
+          </ol>
+        </div>
+
         <div className="prose prose-invert max-w-none">
-          <div className="bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-blue-500/10 rounded-2xl border border-purple-400/30 p-6 mb-8">
-            <div className="flex items-center gap-2 mb-3">
-              <ShieldCheck className="text-green-400" size={20} />
-              <h2 className="text-xl font-semibold text-white mb-0">Agreement to Terms</h2>
-            </div>
-            <p className="text-white/80 mb-0">
-              By accessing or using Migo Advertisement services, you agree to be bound by these Terms of Service and all applicable laws and regulations.
-            </p>
-          </div>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-pink-400 mb-4">1. Service Description</h2>
+          {/* Section 1 */}
+          <section id="services" className="mb-8">
+            <h2 className="text-2xl font-bold text-pink-400 mb-4">1. Services Description</h2>
             <div className="text-white/80 space-y-3">
-              <p>Migo Advertisement operates a mobile billboard advertising network using tablets mounted on rideshare vehicles. Our services include:</p>
+              <p>Migo Advertisement LLC ("<strong>Migo</strong>," "<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>") operates a mobile billboard advertising network using digital display tablets mounted on participating vehicles. Our services include:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Mobile billboard advertising placement</li>
-                <li>Driver recruitment and management</li>
-                <li>Advertisement content management</li>
-                <li>Performance tracking and reporting</li>
+                <li>Mobile billboard advertising placement and campaign management.</li>
+                <li>Driver recruitment, onboarding, and earnings management.</li>
+                <li>Advertisement content creation, hosting, and rotation.</li>
+                <li>Performance tracking, impression reporting, and analytics.</li>
+                <li>QR code campaign integrations for advertisers.</li>
               </ul>
+              <p>We reserve the right to modify, suspend, or discontinue any feature or service at any time with reasonable notice.</p>
             </div>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-purple-400 mb-4">2. Equipment and Liability</h2>
+          {/* Section 2 */}
+          <section id="accounts" className="mb-8">
+            <h2 className="text-2xl font-bold text-purple-400 mb-4">2. Accounts and Eligibility</h2>
             <div className="text-white/80 space-y-3">
-              <p><strong>Equipment Financing:</strong> Tablets are provided through a financing arrangement. Equipment ownership transfers to driver upon full payment.</p>
-              <p><strong>Equipment Coverage:</strong> Equipment insurance is provided through our tablet provider. Company covers equipment failure and manufacturing defects. Drivers are responsible for damage from negligence, misuse, or accidents.</p>
-              <p><strong>Theft Policy:</strong> Basic theft coverage included through provider insurance. Enhanced tablet coverage available for additional monthly fee (deducted from earnings).</p>
-              <p><strong>Damage Policy:</strong> Normal wear and tear is covered. Intentional damage, negligence, or misuse may result in repair costs charged to driver.</p>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-400 mb-4">3. Driver Terms</h2>
-            <div className="text-white/80 space-y-3">
-              <p><strong>Eligibility:</strong> Must be active driver (rideshare, delivery, or personal vehicle) with valid license and current auto insurance.</p>
-              <p><strong>Insurance Requirements:</strong> Drivers must maintain their own vehicle insurance appropriate for their driving activities. Migo Advertisement is not responsible for driver insurance requirements or coverage.</p>
-              <p><strong>Installation:</strong> Professional tablet installation required at approved locations.</p>
-              <p><strong>Safety Requirements:</strong> Drivers must prioritize road safety over equipment interaction. No touching, adjusting, or interacting with advertising equipment while driving. Drivers are solely responsible for any accidents caused by equipment distraction.</p>
-              <p><strong>Equipment Maintenance:</strong> Drivers must ensure secure mounting and report loose installations immediately. Any modification of installation or unsafe mounting is prohibited and voids all protections.</p>
-              <p><strong>Performance:</strong> Minimum driving hours and route compliance required for optimal ad visibility.</p>
-              <p><strong>Payment:</strong> Earnings paid monthly based on verified driving data and ad impressions.</p>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">4. Advertiser Terms</h2>
-            <div className="text-white/80 space-y-3">
-              <p><strong>Content Standards:</strong> All advertisements must comply with local laws and our content guidelines.</p>
-              <p><strong>Pricing:</strong> Pre-launch pricing locked for first 100 customers for one year with written agreement.</p>
-              <p><strong>Performance:</strong> No guarantees on specific impression counts, but reporting provided.</p>
-              <p><strong>Cancellation:</strong> 30-day written notice required for service changes.</p>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-green-400 mb-4">5. Data Collection and QR Code Interactions</h2>
-            <div className="text-white/80 space-y-3">
-              <p><strong>Voluntary Data Collection:</strong> Migo Advertisement only collects customer data when individuals voluntarily scan QR codes displayed on advertisements.</p>
-              <p><strong>Consent Process:</strong> Upon scanning a QR code, users receive a clear message stating they agree to share their information with Migo Advertisement and advertising partners.</p>
-              <p><strong>Data Collected:</strong> Information provided by the user plus GPS location where the QR code was scanned for advertiser analytics and campaign optimization.</p>
-              <p><strong>Data Sharing:</strong> Collected information is shared with relevant advertisers as part of campaign services. Users consent to this sharing when scanning QR codes.</p>
-              <p><strong>No Driver Data:</strong> We do not collect or store customer data from drivers' transportation activities. All driver data relates only to advertising campaign participation.</p>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-pink-400 mb-4">6. Launch Timeline</h2>
-            <div className="text-white/80 space-y-3">
-              <p><strong>Estimated Launch:</strong> January 15, 2026 (subject to change)</p>
-              <p><strong>Notice Policy:</strong> Minimum 30-day written notice provided if launch date changes.</p>
-              <p><strong>Pre-Launch:</strong> Testing phase with 3 tablets currently active.</p>
-            </div>
-          </section>
-
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-orange-400 mb-4">7. Indemnification</h2>
-            <div className="text-white/80 space-y-3">
-              <p><strong>Driver Indemnification:</strong> By participating in Migo Advertisement campaigns, drivers agree to indemnify, defend, and hold harmless Migo Advertisement, its officers, directors, employees, and agents from any and all claims, damages, losses, costs, and expenses (including reasonable attorney fees) arising from or related to:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Driver's operation of their vehicle while displaying advertisements</li>
-                <li>Any accidents, injuries, or property damage caused by driver's actions</li>
-                <li>Driver's violation of traffic laws or regulations</li>
-                <li>Driver's breach of these Terms of Service</li>
-                <li>Any claims by third parties related to driver's participation in campaigns</li>
-                <li>Misuse or improper installation of advertising equipment</li>
+                <li><strong>Age:</strong> You must be at least 18 years old to create an account or use our services.</li>
+                <li><strong>Business authority:</strong> If registering on behalf of a company, you represent that you have authority to bind that company to these Terms.</li>
+                <li><strong>Accurate information:</strong> You agree to provide accurate, current, and complete information when creating an account and to keep it up to date.</li>
+                <li><strong>Account security:</strong> You are responsible for maintaining the confidentiality of your account credentials and for all activity under your account. Notify us immediately at bernardo@migonow.com if you suspect unauthorized access.</li>
+                <li><strong>One account per user:</strong> Creating multiple accounts to circumvent restrictions or penalties is prohibited.</li>
               </ul>
-              <p><strong>Business Indemnification:</strong> Business advertisers agree to indemnify Migo Advertisement for any claims arising from their advertisement content, including but not limited to copyright infringement, false advertising, or regulatory violations.</p>
             </div>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-purple-400 mb-4">8. Limitation of Liability</h2>
+          {/* Section 3 */}
+          <section id="advertiser-terms" className="mb-8">
+            <h2 className="text-2xl font-bold text-blue-400 mb-4">3. Advertiser Terms</h2>
             <div className="text-white/80 space-y-3">
-              <p>Migo Advertisement's liability is limited to the amount paid for services. We are not liable for:</p>
+              <p><strong>Content Standards:</strong> All advertisement content submitted by advertisers must:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Lost profits or business opportunities</li>
-                <li>Third-party actions or accidents of any kind</li>
-                <li>Technology failures or service interruptions</li>
-                <li>Changes in rideshare platform policies</li>
-                <li>Accidents or incidents caused by equipment distraction or driver inattention</li>
-                <li>Comparative negligence scenarios involving driver behavior</li>
-                <li>Installation-related damage or safety issues</li>
-                <li>Equipment failure leading to accidents or incidents</li>
-                <li>Driver failure to follow safety protocols or installation guidelines</li>
+                <li>Comply with all applicable U.S. federal, state, and local laws.</li>
+                <li>Not be false, deceptive, misleading, or defamatory.</li>
+                <li>Not infringe any third-party copyright, trademark, or other intellectual property rights.</li>
+                <li>Not contain adult content, hate speech, illegal solicitation, or content promoting violence or discrimination.</li>
               </ul>
-              <p><strong>Driver Safety Responsibility:</strong> Drivers acknowledge that displaying advertisements requires attention to road safety and agree to prioritize safe driving over equipment interaction. Any accidents or incidents resulting from equipment distraction are solely the driver's responsibility.</p>
-              <p><strong>Installation Safety:</strong> Professional installation is provided, but drivers are responsible for ensuring continued safe mounting and reporting any installation issues immediately. Migo Advertisement is not liable for accidents caused by equipment failure, loose mounting, or driver modification of installation.</p>
+              <p className="mt-3"><strong>Content Approval:</strong> Migo reserves the right to reject or remove any advertisement that violates our content standards without refund of amounts attributable to the rejected content period.</p>
+              <p><strong>Asset Delivery:</strong> Advertisers must provide final creative assets in the required format at least 5 business days before the campaign start date. Delays caused by late asset delivery are not grounds for a refund or campaign extension.</p>
+              <p><strong>Performance:</strong> We do not guarantee specific impression counts, click-through rates, or business outcomes from campaigns. Performance reports are provided as informational data.</p>
+              <p><strong>Pre-launch pricing lock:</strong> Pricing locked in a written agreement for the first 100 customers will be honored for the term specified in that agreement.</p>
             </div>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-400 mb-4">9. Modifications</h2>
-            <div className="text-white/80 space-y-3">
-              <p>We reserve the right to modify these terms with 30-day notice. Continued use constitutes acceptance of updated terms.</p>
+          {/* Section 4 */}
+          <section id="billing" className="mb-8">
+            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
+              <span className="inline-flex items-center gap-2">
+                <CreditCard size={22} />
+                4. Fees, Billing, and Refund Policy
+              </span>
+            </h2>
+            <div className="text-white/80 space-y-4">
+              <div className="bg-gray-900/50 rounded-lg p-4">
+                <h3 className="text-lg font-semibold text-cyan-300 mb-2">Billing</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>All fees are stated in U.S. dollars and are exclusive of applicable taxes unless otherwise noted.</li>
+                  <li>Billing occurs on the schedule stated in your campaign agreement (monthly, prepaid, or custom).</li>
+                  <li>You authorize us to charge your payment method on file for all fees due.</li>
+                  <li>Invoices unpaid after 15 days accrue a 1.5% monthly late fee (18% annually) or the maximum permitted by Arizona law, whichever is less.</li>
+                  <li>Accounts past due by 30 days or more may be suspended until the balance is paid.</li>
+                </ul>
+              </div>
+
+              <div className="bg-green-900/20 border border-green-400/30 rounded-lg p-4">
+                <h3 className="text-lg font-semibold text-green-300 mb-2">Cancellation Policy</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Written notice required:</strong> To cancel a campaign or service subscription, you must provide at least <strong>30 days' written notice</strong> via email to bernardo@migonow.com.</li>
+                  <li><strong>During the notice period:</strong> Your campaign will continue to run and you remain responsible for fees accrued during that 30-day period.</li>
+                  <li><strong>Immediate cancellation:</strong> We may grant immediate cancellation requests at our sole discretion. In that case, fees for the current billing period in progress are still due and non-refundable.</li>
+                </ul>
+              </div>
+
+              <div className="bg-yellow-900/20 border border-yellow-400/30 rounded-lg p-4">
+                <h3 className="text-lg font-semibold text-yellow-300 mb-2">Refund Policy</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li><strong>Prepaid campaigns:</strong> If you cancel with 30 days' written notice, we will issue a prorated credit or refund for any <em>full, unused campaign days</em> remaining beyond the 30-day notice period. Partial days are not refunded.</li>
+                  <li><strong>No refunds for completed services:</strong> Fees for advertising already delivered are non-refundable.</li>
+                  <li><strong>Service failures:</strong> If we fail to deliver a campaign for reasons within our control (e.g., platform outage exceeding 48 hours in a billing period), we will issue a prorated service credit for the affected period.</li>
+                  <li><strong>No refunds for content rejection:</strong> If your advertisement is removed for violating our content standards, no refund is issued for the removed content period.</li>
+                  <li><strong>Refund method:</strong> All approved refunds are issued to the original payment method within 10 business days of approval.</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-900/50 rounded-lg p-4">
+                <h3 className="text-lg font-semibold text-purple-300 mb-2">Chargebacks</h3>
+                <p>If you initiate a chargeback with your bank or credit card issuer for a valid charge, your account will be immediately suspended and a $35 chargeback processing fee will be added to your balance. Continued chargebacks may result in permanent account termination and referral to collections.</p>
+              </div>
             </div>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-yellow-400 mb-4">10. Dispute Resolution</h2>
+          {/* Section 5 */}
+          <section id="driver-terms" className="mb-8">
+            <h2 className="text-2xl font-bold text-green-400 mb-4">5. Driver Terms</h2>
             <div className="text-white/80 space-y-3">
-              <p><strong>Mandatory Arbitration:</strong> All disputes, claims, or controversies arising from or relating to these Terms of Service or participation in Migo Advertisement services shall be resolved exclusively through binding arbitration, not in court.</p>
-              
-              <p><strong>Arbitration Process:</strong></p>
+              <p><strong>Eligibility:</strong> Drivers must be at least 18 years old, hold a valid U.S. driver's license, maintain current personal auto insurance meeting their state's minimum requirements, and operate a vehicle in roadworthy condition.</p>
+              <p><strong>Independent contractor status:</strong> Drivers participate as independent contractors, not employees of Migo Advertisement. Migo is not responsible for drivers' tax obligations, insurance requirements, or compliance with rideshare platform rules.</p>
+              <p><strong>Safety â€” non-negotiable rule:</strong> Drivers must never touch, adjust, or interact with the advertising tablet while the vehicle is in motion. Road safety is the driver's sole responsibility at all times while operating the vehicle.</p>
+              <p><strong>Installation:</strong> Tablets must be installed only at Migo-approved locations. Unauthorized modification of any installation voids all equipment protections and indemnification coverage.</p>
+              <p><strong>Equipment reporting:</strong> Drivers must immediately report loose, damaged, or malfunctioning equipment via the designated support channel.</p>
+              <p><strong>Minimum performance:</strong> Minimum driving hours or route compliance thresholds may apply as specified in your driver agreement. Failure to meet minimums may affect earnings calculations.</p>
+              <p><strong>Earnings and payment:</strong> Driver earnings are calculated monthly based on verified GPS driving data and confirmed ad impressions and are paid within 10 business days after the end of each calendar month.</p>
+            </div>
+          </section>
+
+          {/* Section 6 */}
+          <section id="equipment" className="mb-8">
+            <h2 className="text-2xl font-bold text-orange-400 mb-4">6. Equipment and Liability</h2>
+            <div className="text-white/80 space-y-3">
+              <p><strong>Equipment financing:</strong> Tablets are provided through a financing arrangement. Ownership transfers to the driver upon completion of all financing payments as specified in the driver's equipment agreement.</p>
+              <p><strong>Covered by Migo:</strong> Manufacturing defects and equipment failures not caused by driver action.</p>
+              <p><strong>Driver responsibility:</strong> Damage caused by negligence, misuse, improper handling, unauthorized modification, or accidents. Repair or replacement costs may be deducted from driver earnings.</p>
+              <p><strong>Theft:</strong> Basic theft coverage is included through the equipment provider's insurance. Enhanced coverage may be available for an additional monthly fee as specified in your driver agreement.</p>
+              <p><strong>Return of equipment:</strong> Upon termination of the driver agreement (for any reason), the driver must return all Migo-owned equipment within 7 days. Failure to return equipment may result in the outstanding retail value being charged against the driver's account and/or reported to the appropriate authorities.</p>
+            </div>
+          </section>
+
+          {/* Section 7 */}
+          <section id="sms-consent" className="mb-8">
+            <h2 className="text-2xl font-bold text-pink-400 mb-4">
+              <span className="inline-flex items-center gap-2">
+                <MessageSquare size={22} />
+                7. SMS Marketing Consent
+              </span>
+            </h2>
+            <div className="text-white/80 space-y-3">
+              <p>By providing your mobile phone number and checking the SMS opt-in box on any Migo form, you expressly consent to receive recurring automated marketing text messages from Migo Advertisement LLC at the number provided. Consent is not a condition of any purchase or service.</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Arbitration administered by American Arbitration Association (AAA) under Commercial Arbitration Rules</li>
-                <li>Single arbitrator selected through AAA procedures</li>
-                <li>Arbitration conducted in Phoenix, Arizona</li>
-                <li>Arizona state law governs all proceedings</li>
+                <li><strong>Message frequency:</strong> Up to 4 marketing messages per month, plus transactional messages.</li>
+                <li><strong>Message and data rates may apply</strong> depending on your mobile carrier and plan.</li>
+                <li><strong>To opt out:</strong> Reply <strong>STOP</strong> to any SMS. You will receive one confirmation and no further marketing messages.</li>
+                <li><strong>For help:</strong> Reply <strong>HELP</strong> or contact bernardo@migonow.com.</li>
               </ul>
-
-              <p><strong>Mediation Requirement:</strong> Before initiating arbitration, parties must attempt good faith mediation for 30 days. Mediation costs shared equally between parties.</p>
-
-              <p><strong>Fee Allocation:</strong></p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Each party pays their own attorney fees and costs</li>
-                <li>Arbitration fees allocated per AAA rules</li>
-                <li>Frivolous claims may result in fee shifting to filing party</li>
-              </ul>
-
-              <p><strong>Class Action Waiver:</strong> All parties waive right to participate in class action lawsuits or class-wide arbitration. Disputes must be resolved individually.</p>
-
-              <p><strong>Jurisdiction:</strong> Any matters not subject to arbitration shall be exclusively handled in state or federal courts located in Maricopa County, Arizona.</p>
+              <p>Full SMS terms are also described in our <Link href="/privacy" className="text-pink-400 hover:text-pink-300 underline">Privacy Policy</Link>.</p>
             </div>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">11. Contact Information</h2>
+          {/* Section 8 */}
+          <section id="prohibited" className="mb-8">
+            <h2 className="text-2xl font-bold text-red-400 mb-4">8. Prohibited Uses</h2>
             <div className="text-white/80 space-y-3">
-              <p>For questions about these terms:</p>
-              <ul className="list-none space-y-2">
-                <li><strong>Email:</strong> bernardo@migonow.com</li>
-                <li><strong>Phone:</strong> 480-647-2380</li>
-                <li><strong>Business:</strong> Migo Advertisement LLC</li>
+              <p>You may not use our website or services to:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Violate any applicable federal, state, or local law or regulation.</li>
+                <li>Submit false, deceptive, or fraudulent information.</li>
+                <li>Infringe on any third party's intellectual property rights.</li>
+                <li>Transmit spam, malware, viruses, or other malicious code.</li>
+                <li>Scrape, crawl, or data-mine the website without written permission.</li>
+                <li>Reverse-engineer, decompile, or attempt to extract source code from any part of our platform.</li>
+                <li>Harass, threaten, or harm any person.</li>
+                <li>Circumvent any security or access control measure.</li>
+                <li>Use the services for any purpose that competes with Migo Advertisement without prior written consent.</li>
+              </ul>
+              <p>Violations may result in immediate account termination and, where appropriate, legal action.</p>
+            </div>
+          </section>
+
+          {/* Section 9 */}
+          <section id="ip" className="mb-8">
+            <h2 className="text-2xl font-bold text-blue-400 mb-4">9. Intellectual Property</h2>
+            <div className="text-white/80 space-y-3">
+              <p><strong>Migo's property:</strong> All content on migonow.com â€” including text, graphics, logos, the Migo name and brand, software, and service designs â€” is owned by or licensed to Migo Advertisement LLC and is protected by U.S. copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without prior written permission.</p>
+              <p><strong>Your content:</strong> You retain ownership of creative assets, logos, and content you submit for advertising campaigns. By submitting content, you grant Migo Advertisement a non-exclusive, royalty-free, worldwide license to host, display, and distribute that content solely for the purpose of running your campaign as agreed.</p>
+              <p><strong>Your representation:</strong> By submitting content, you represent and warrant that you own or have sufficient rights to that content and that its use by Migo will not infringe any third-party rights.</p>
+            </div>
+          </section>
+
+          {/* Section 10 */}
+          <section id="qr" className="mb-8">
+            <h2 className="text-2xl font-bold text-cyan-400 mb-4">10. QR Code Data Collection</h2>
+            <div className="text-white/80 space-y-3">
+              <p><strong>Voluntary interaction only:</strong> Data is collected from viewers only when they voluntarily scan a QR code displayed on one of our advertising tablets.</p>
+              <p><strong>Consent at point of scan:</strong> Upon scanning, users are presented with a clear notice explaining that by proceeding they agree to share their submitted information with Migo Advertisement and the relevant advertiser.</p>
+              <p><strong>Data shared with advertiser:</strong> Information submitted via a QR code scan, along with the approximate GPS location of the scan, is provided to the advertiser whose campaign generated the QR code as part of our reporting services.</p>
+              <p><strong>No driver data included:</strong> We do not collect or share data about drivers' personal transportation activities. All driver-related data relates solely to advertising campaign participation.</p>
+            </div>
+          </section>
+
+          {/* Section 11 */}
+          <section id="indemnification" className="mb-8">
+            <h2 className="text-2xl font-bold text-orange-400 mb-4">11. Indemnification</h2>
+            <div className="text-white/80 space-y-3">
+              <p>You agree to indemnify, defend, and hold harmless Migo Advertisement LLC, and its officers, directors, employees, and agents from and against any and all claims, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Your use of or access to our website or services.</li>
+                <li>Your violation of these Terms or any applicable law.</li>
+                <li>Your advertisement content, including any claims of copyright infringement, false advertising, or regulatory violation.</li>
+                <li><strong>Drivers:</strong> Your operation of a vehicle while displaying Migo advertisements, including any accidents, injuries, or property damage caused by your actions or inactions.</li>
+                <li><strong>Drivers:</strong> Your misuse, unauthorized modification, or improper handling of advertising equipment.</li>
+                <li>Any claim by a third party arising from your breach of these Terms.</li>
               </ul>
             </div>
           </section>
+
+          {/* Section 12 */}
+          <section id="liability" className="mb-8">
+            <h2 className="text-2xl font-bold text-purple-400 mb-4">12. Limitation of Liability</h2>
+            <div className="text-white/80 space-y-3">
+              <p>To the fullest extent permitted by applicable law, Migo Advertisement LLC's total liability to you for any claim arising out of or relating to these Terms or our services shall not exceed the greater of (a) the total fees you paid to Migo in the 3 months immediately preceding the claim, or (b) $100.</p>
+              <p>In no event shall Migo Advertisement LLC be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, loss of data, loss of goodwill, business interruption, or the cost of substitute services, even if advised of the possibility of such damages.</p>
+              <p>We are not liable for:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Campaign performance outcomes or business results.</li>
+                <li>Third-party actions or accidents of any kind.</li>
+                <li>Technology failures, service interruptions, or data loss beyond our reasonable control.</li>
+                <li>Changes in rideshare or delivery platform policies that affect driver participation.</li>
+                <li>Accidents or incidents involving driver vehicles, including those where the advertising tablet was present.</li>
+                <li>Equipment failure, loose mounting, or damage resulting from driver modification or negligence.</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Section 13 */}
+          <section id="disclaimer" className="mb-8">
+            <h2 className="text-2xl font-bold text-yellow-400 mb-4">13. Disclaimers</h2>
+            <div className="text-white/80 space-y-3">
+              <p>Our website and services are provided on an "<strong>as is</strong>" and "<strong>as available</strong>" basis without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+              <p>We do not warrant that our website will be uninterrupted, error-free, or free of viruses or other harmful components. We do not warrant the accuracy or completeness of any content on the site.</p>
+            </div>
+          </section>
+
+          {/* Section 14 */}
+          <section id="termination" className="mb-8">
+            <h2 className="text-2xl font-bold text-red-400 mb-4">14. Termination</h2>
+            <div className="text-white/80 space-y-3">
+              <p>Either party may terminate this agreement by providing 30 days' written notice as described in the cancellation policy in Section 4.</p>
+              <p>Migo reserves the right to immediately suspend or terminate your account and access to services, without notice or liability, if you:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Breach any provision of these Terms.</li>
+                <li>Fail to pay any amount due within 30 days of the due date.</li>
+                <li>Engage in fraudulent, abusive, or illegal conduct.</li>
+                <li>Pose a risk to the safety of drivers, the public, or the Migo platform.</li>
+              </ul>
+              <p>Upon termination: (a) your right to access the services immediately ceases; (b) all outstanding fees become immediately due and payable; (c) drivers must return all Migo-owned equipment within 7 days; (d) all outstanding earnings due to drivers will be paid within the next regular payment cycle.</p>
+            </div>
+          </section>
+
+          {/* Section 15 */}
+          <section id="disputes" className="mb-8">
+            <h2 className="text-2xl font-bold text-yellow-400 mb-4">15. Dispute Resolution and Binding Arbitration</h2>
+            <div className="text-white/80 space-y-4">
+              <div className="bg-yellow-900/20 border border-yellow-400/30 rounded-lg p-4">
+                <p className="font-semibold text-yellow-300">PLEASE READ THIS SECTION CAREFULLY â€” IT AFFECTS YOUR LEGAL RIGHTS.</p>
+              </div>
+
+              <p><strong>Informal resolution first:</strong> Before initiating any formal proceeding, the parties agree to attempt to resolve the dispute informally by contacting Migo at bernardo@migonow.com with a written description of the claim. We will attempt to resolve the dispute within 30 days. If unresolved after 30 days, either party may proceed to arbitration.</p>
+
+              <p><strong>Binding arbitration:</strong> Except for claims that qualify for small claims court, all disputes, claims, or controversies arising out of or relating to these Terms or your use of Migo's services shall be resolved exclusively through final and binding arbitration administered by the American Arbitration Association (AAA) under its Commercial Arbitration Rules.</p>
+
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Arbitration shall be conducted by a single neutral arbitrator selected per AAA procedures.</li>
+                <li>Arbitration shall take place in Phoenix, Maricopa County, Arizona.</li>
+                <li>Arizona state law governs all substantive issues.</li>
+                <li>The arbitrator's decision is final and binding and may be entered as a judgment in any court of competent jurisdiction.</li>
+                <li>Each party shall bear its own attorneys' fees and costs. AAA filing fees are allocated per AAA rules.</li>
+              </ul>
+
+              <div className="bg-red-900/20 border border-red-400/30 rounded-lg p-4">
+                <h3 className="text-lg font-semibold text-red-300 mb-2">Class Action Waiver</h3>
+                <p className="mb-0">YOU AND MIGO ADVERTISEMENT EACH WAIVE THE RIGHT TO PARTICIPATE IN A CLASS ACTION LAWSUIT OR CLASS-WIDE ARBITRATION. ALL DISPUTES MUST BE BROUGHT ON AN INDIVIDUAL BASIS ONLY. This waiver is a material term of this agreement.</p>
+              </div>
+
+              <p><strong>Exceptions:</strong> Either party may seek emergency injunctive or equitable relief in any court of competent jurisdiction to protect intellectual property rights or prevent imminent harm, without waiving the right to arbitrate other claims.</p>
+            </div>
+          </section>
+
+          {/* Section 16 */}
+          <section id="governing-law" className="mb-8">
+            <h2 className="text-2xl font-bold text-blue-400 mb-4">16. Governing Law</h2>
+            <div className="text-white/80 space-y-3">
+              <p>These Terms are governed by and construed in accordance with the laws of the State of Arizona, without regard to its conflict of law principles. For any matters not subject to arbitration, you consent to the exclusive jurisdiction and venue of the state and federal courts located in Maricopa County, Arizona.</p>
+            </div>
+          </section>
+
+          {/* Section 17 */}
+          <section id="modifications" className="mb-8">
+            <h2 className="text-2xl font-bold text-purple-400 mb-4">17. Modifications to These Terms</h2>
+            <div className="text-white/80 space-y-3">
+              <p>We reserve the right to modify these Terms at any time. When we make material changes, we will:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Update the "Last updated" date at the top of this page.</li>
+                <li>Notify registered users by email at the address on file at least 30 days before changes take effect.</li>
+              </ul>
+              <p>Your continued use of our services after the effective date of any modification constitutes your acceptance of the updated Terms. If you do not agree to the modified Terms, you must stop using the services and cancel your account before the effective date.</p>
+            </div>
+          </section>
+
+          {/* Section 18 */}
+          <section id="contact-terms" className="mb-8">
+            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
+              <span className="inline-flex items-center gap-2">
+                <FileText size={22} />
+                18. Contact Information
+              </span>
+            </h2>
+            <div className="text-white/80 space-y-3">
+              <p>For questions, notices, or legal correspondence regarding these Terms:</p>
+              <div className="bg-gray-900/50 rounded-lg p-5">
+                <ul className="list-none space-y-2">
+                  <li><strong>Business:</strong> Migo Advertisement LLC</li>
+                  <li><strong>Contact:</strong> Bernardo Ruiz</li>
+                  <li>
+                    <strong>Email:</strong>{" "}
+                    <a href="mailto:bernardo@migonow.com" className="text-cyan-400 hover:text-cyan-300 underline">
+                      bernardo@migonow.com
+                    </a>
+                  </li>
+                  <li><strong>Phone:</strong> 480-647-2380</li>
+                  <li><strong>Address:</strong> 34293 S Bertha St, Black Canyon City, Arizona 85324</li>
+                </ul>
+              </div>
+              <p className="text-white/50 text-sm mt-4">These Terms constitute the entire agreement between you and Migo Advertisement LLC with respect to our services and supersede all prior agreements. If any provision is found to be unenforceable, the remaining provisions remain in full effect.</p>
+            </div>
+          </section>
+
         </div>
 
         {/* Footer Navigation */}
