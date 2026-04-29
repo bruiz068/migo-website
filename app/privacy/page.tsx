@@ -71,6 +71,7 @@ export default function PrivacyPage() {
             <li><a href="#rights" className="hover:text-purple-200 transition-colors">Your Rights and Choices</a></li>
             <li><a href="#children" className="hover:text-purple-200 transition-colors">Children's Privacy</a></li>
             <li><a href="#changes" className="hover:text-purple-200 transition-colors">Changes to This Policy</a></li>
+            <li><a href="#sms-notifications" className="hover:text-purple-200 transition-colors">SMS Messaging and Automated Notifications</a></li>
             <li><a href="#contact-privacy" className="hover:text-purple-200 transition-colors">Contact Us</a></li>
           </ol>
         </div>
@@ -309,11 +310,30 @@ export default function PrivacyPage() {
           </section>
 
           {/* Section 12 */}
+          <section id="sms-notifications" className="mb-8">
+            <h2 className="text-2xl font-bold text-sky-400 mb-4">
+              <span className="inline-flex items-center gap-2">
+                <MessageSquare size={22} />
+                12. SMS Messaging and Automated Notifications
+              </span>
+            </h2>
+            <div className="text-white/80 space-y-3">
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Data collected via SMS:</strong> Phone numbers of registered business operators who receive automated SMS notifications.</li>
+                <li><strong>How it's used:</strong> Phone numbers are used solely to deliver AI-generated call summary notifications to the registered business operator. This data is not used for marketing.</li>
+                <li><strong>Data sharing:</strong> Phone numbers used for SMS notifications are never sold or shared with third parties.</li>
+                <li><strong>Opt-out:</strong> Recipients can opt out of SMS notifications at any time by replying <strong>STOP</strong> to any message.</li>
+                <li><strong>Retention:</strong> Phone numbers are retained only for the duration of the active service agreement.</li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Section 13 */}
           <section id="contact-privacy" className="mb-8">
             <h2 className="text-2xl font-bold text-pink-400 mb-4">
               <span className="inline-flex items-center gap-2">
                 <Mail size={22} />
-                12. Contact Us
+                13. Contact Us
               </span>
             </h2>
             <div className="text-white/80 space-y-3">

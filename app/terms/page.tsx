@@ -67,6 +67,7 @@ export default function TermsPage() {
             <li><a href="#ip" className="hover:text-purple-200 transition-colors">Intellectual Property</a></li>
             <li><a href="#qr" className="hover:text-purple-200 transition-colors">QR Code Data Collection</a></li>
             <li><a href="#indemnification" className="hover:text-purple-200 transition-colors">Indemnification</a></li>
+            <li><a href="#sms-notifications" className="hover:text-purple-200 transition-colors">SMS Messaging Terms</a></li>
             <li><a href="#liability" className="hover:text-purple-200 transition-colors">Limitation of Liability</a></li>
             <li><a href="#disclaimer" className="hover:text-purple-200 transition-colors">Disclaimers</a></li>
             <li><a href="#termination" className="hover:text-purple-200 transition-colors">Termination</a></li>
@@ -278,8 +279,31 @@ export default function TermsPage() {
           </section>
 
           {/* Section 12 */}
+          <section id="sms-notifications" className="mb-8">
+            <h2 className="text-2xl font-bold text-sky-400 mb-4">
+              <span className="inline-flex items-center gap-2">
+                <MessageSquare size={22} />
+                12. SMS Messaging Terms
+              </span>
+            </h2>
+            <div className="text-white/80 space-y-3">
+              <p>Migo Advertisement operates automated SMS notification services for business clients.</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li><strong>Program description:</strong> Automated SMS call summaries sent to registered business operators after AI-assisted phone calls.</li>
+                <li><strong>Message frequency:</strong> Messages are sent on a per-call basis and vary based on call volume.</li>
+                <li><strong>Message and data rates may apply.</strong> Contact your wireless carrier for details.</li>
+                <li><strong>To opt out:</strong> Reply <strong>STOP</strong> to any message to unsubscribe. You will receive no further messages.</li>
+                <li><strong>For help:</strong> Reply <strong>HELP</strong> for assistance or contact <a href="mailto:bernardo@migonow.com" className="text-sky-400 hover:text-sky-300 underline">bernardo@migonow.com</a>.</li>
+              </ul>
+              <div className="bg-gray-900/50 rounded-lg p-4 mt-2">
+                <p className="mb-0"><strong>Support:</strong> For questions contact <a href="mailto:bernardo@migonow.com" className="text-sky-400 hover:text-sky-300 underline">bernardo@migonow.com</a> or 480-647-2380.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Section 13 */}
           <section id="liability" className="mb-8">
-            <h2 className="text-2xl font-bold text-purple-400 mb-4">12. Limitation of Liability</h2>
+            <h2 className="text-2xl font-bold text-purple-400 mb-4">13. Limitation of Liability</h2>
             <div className="text-white/80 space-y-3">
               <p>To the fullest extent permitted by applicable law, Migo Advertisement LLC's total liability to you for any claim arising out of or relating to these Terms or our services shall not exceed the greater of (a) the total fees you paid to Migo in the 3 months immediately preceding the claim, or (b) $100.</p>
               <p>In no event shall Migo Advertisement LLC be liable for any indirect, incidental, special, consequential, or punitive damages, including loss of profits, loss of data, loss of goodwill, business interruption, or the cost of substitute services, even if advised of the possibility of such damages.</p>
@@ -295,18 +319,18 @@ export default function TermsPage() {
             </div>
           </section>
 
-          {/* Section 13 */}
+          {/* Section 14 */}
           <section id="disclaimer" className="mb-8">
-            <h2 className="text-2xl font-bold text-yellow-400 mb-4">13. Disclaimers</h2>
+            <h2 className="text-2xl font-bold text-yellow-400 mb-4">14. Disclaimers</h2>
             <div className="text-white/80 space-y-3">
               <p>Our website and services are provided on an "<strong>as is</strong>" and "<strong>as available</strong>" basis without warranties of any kind, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
               <p>We do not warrant that our website will be uninterrupted, error-free, or free of viruses or other harmful components. We do not warrant the accuracy or completeness of any content on the site.</p>
             </div>
           </section>
 
-          {/* Section 14 */}
+          {/* Section 15 */}
           <section id="termination" className="mb-8">
-            <h2 className="text-2xl font-bold text-red-400 mb-4">14. Termination</h2>
+            <h2 className="text-2xl font-bold text-red-400 mb-4">15. Termination</h2>
             <div className="text-white/80 space-y-3">
               <p>Either party may terminate this agreement by providing 30 days' written notice as described in the cancellation policy in Section 4.</p>
               <p>Migo reserves the right to immediately suspend or terminate your account and access to services, without notice or liability, if you:</p>
@@ -320,9 +344,9 @@ export default function TermsPage() {
             </div>
           </section>
 
-          {/* Section 15 */}
+          {/* Section 16 */}
           <section id="disputes" className="mb-8">
-            <h2 className="text-2xl font-bold text-yellow-400 mb-4">15. Dispute Resolution and Binding Arbitration</h2>
+            <h2 className="text-2xl font-bold text-yellow-400 mb-4">16. Dispute Resolution and Binding Arbitration</h2>
             <div className="text-white/80 space-y-4">
               <div className="bg-yellow-900/20 border border-yellow-400/30 rounded-lg p-4">
                 <p className="font-semibold text-yellow-300">PLEASE READ THIS SECTION CAREFULLY â€” IT AFFECTS YOUR LEGAL RIGHTS.</p>
@@ -349,17 +373,17 @@ export default function TermsPage() {
             </div>
           </section>
 
-          {/* Section 16 */}
+          {/* Section 17 */}
           <section id="governing-law" className="mb-8">
-            <h2 className="text-2xl font-bold text-blue-400 mb-4">16. Governing Law</h2>
+            <h2 className="text-2xl font-bold text-blue-400 mb-4">17. Governing Law</h2>
             <div className="text-white/80 space-y-3">
               <p>These Terms are governed by and construed in accordance with the laws of the State of Arizona, without regard to its conflict of law principles. For any matters not subject to arbitration, you consent to the exclusive jurisdiction and venue of the state and federal courts located in Maricopa County, Arizona.</p>
             </div>
           </section>
 
-          {/* Section 17 */}
+          {/* Section 18 */}
           <section id="modifications" className="mb-8">
-            <h2 className="text-2xl font-bold text-purple-400 mb-4">17. Modifications to These Terms</h2>
+            <h2 className="text-2xl font-bold text-purple-400 mb-4">18. Modifications to These Terms</h2>
             <div className="text-white/80 space-y-3">
               <p>We reserve the right to modify these Terms at any time. When we make material changes, we will:</p>
               <ul className="list-disc pl-6 space-y-2">
@@ -370,12 +394,12 @@ export default function TermsPage() {
             </div>
           </section>
 
-          {/* Section 18 */}
+          {/* Section 19 */}
           <section id="contact-terms" className="mb-8">
             <h2 className="text-2xl font-bold text-cyan-400 mb-4">
               <span className="inline-flex items-center gap-2">
                 <FileText size={22} />
-                18. Contact Information
+                19. Contact Information
               </span>
             </h2>
             <div className="text-white/80 space-y-3">
