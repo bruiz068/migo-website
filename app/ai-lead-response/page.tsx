@@ -104,12 +104,12 @@ export default function AILeadResponsePage() {
           <nav className="hidden md:flex items-center gap-6 text-sm text-white/80">
             <Link href="/" className="hover:text-white font-semibold">← All Services</Link>
             <a href="#features" className="hover:text-emerald-400">Features</a>
-            <a href="#waitlist" className="hover:text-teal-400">Join Waitlist</a>
+            <a href="#contact" className="hover:text-teal-400">Get Started</a>
             <a
-              href="#waitlist"
+              href="#contact"
               className="ml-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-emerald-500/25 transition-all duration-300"
             >
-              Get Early Access
+              Get Started
             </a>
           </nav>
 
@@ -127,25 +127,25 @@ export default function AILeadResponsePage() {
             <nav className="px-6 py-4 space-y-3">
               <Link href="/" className="block text-white/80 hover:text-white font-semibold py-2" onClick={() => setMobileMenuOpen(false)}>← All Services</Link>
               <a href="#features" className="block text-white/80 hover:text-emerald-400 py-2" onClick={() => setMobileMenuOpen(false)}>Features</a>
-              <a href="#waitlist" className="block text-white/80 hover:text-teal-400 py-2" onClick={() => setMobileMenuOpen(false)}>Join Waitlist</a>
+              <a href="#contact" className="block text-white/80 hover:text-teal-400 py-2" onClick={() => setMobileMenuOpen(false)}>Get Started</a>
               <a
-                href="#waitlist"
+                href="#contact"
                 className="block mt-2 text-center px-4 py-3 rounded-xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-white font-semibold"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Get Early Access
+                Get Started
               </a>
             </nav>
           </div>
         )}
       </header>
 
-      {/* Coming Soon Banner */}
+      {/* Live Banner */}
       <div className="relative overflow-hidden bg-gradient-to-r from-emerald-600/20 via-teal-600/20 to-cyan-600/20 border-b border-emerald-500/30">
         <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-center gap-3">
           <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" />
-          <span className="text-emerald-400 font-bold text-sm uppercase tracking-wide">Coming Soon</span>
-          <span className="text-white/60 text-sm">— Join the waitlist to get early access</span>
+          <span className="text-emerald-400 font-bold text-sm uppercase tracking-wide">Now Live</span>
+          <span className="text-white/60 text-sm">— Sign up and get started today</span>
         </div>
       </div>
 
@@ -170,16 +170,16 @@ export default function AILeadResponsePage() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#waitlist"
+              href="#contact"
               className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all duration-300"
             >
-              Join the Waitlist <ArrowRight size={18} />
+              Get Started <ArrowRight size={18} />
             </a>
             <a
               href="#features"
               className="inline-flex items-center justify-center gap-2 rounded-2xl px-6 py-3 border border-white/15 hover:bg-white/5 transition-all duration-300"
             >
-              See What's Coming
+              See Features
             </a>
           </div>
 
@@ -256,24 +256,24 @@ export default function AILeadResponsePage() {
       </section>
 
       {/* Waitlist */}
-      <section id="waitlist" className="mx-auto max-w-7xl px-6 pb-24">
+      <section id="contact" className="mx-auto max-w-7xl px-6 pb-24">
         <div className="max-w-xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-400/30 bg-emerald-500/10 text-emerald-400 text-sm font-semibold mb-6">
-            <CheckCircle size={14} /> Limited early access spots available
+            <CheckCircle size={14} /> Now accepting new customers
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Be the first to{" "}
+            Ready to{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400">
-              never miss a lead
+              never miss a lead?
             </span>
           </h2>
           <p className="text-white/60 mb-8">
-            Join the waitlist for early access, founding member pricing, and hands-on setup from our team.
+            Get started today. Our team will have your AI responding to leads within 24 hours.
           </p>
 
           {status === "ok" ? (
             <div className="p-6 rounded-2xl border border-green-400/30 bg-green-500/10 text-green-400 font-semibold text-lg">
-              You're on the list! We'll be in touch soon. 🎉
+              Thanks! We'll be in touch shortly. 🎉
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-3">
@@ -303,7 +303,7 @@ export default function AILeadResponsePage() {
                 type="submit"
                 className="w-full mt-2 inline-flex items-center justify-center gap-2 rounded-2xl px-5 py-3 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 font-semibold shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/50 transition-all duration-300"
               >
-                {status === "sending" ? "Joining…" : "Join the Waitlist"} <ArrowRight size={18} />
+                {status === "sending" ? "Sending…" : "Get Started"} <ArrowRight size={18} />
               </button>
               {status === "error" && (
                 <p className="text-sm text-rose-400">Something went wrong. Please try again.</p>
