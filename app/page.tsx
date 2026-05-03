@@ -1,10 +1,10 @@
 ﻿import Link from "next/link";
 import type { Metadata } from "next";
-import { ArrowRight, Tablet, Zap } from "lucide-react";
+import { ArrowRight, Tablet, Zap, Bot } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Migo — Choose Your Service",
-  description: "Mobile billboard advertising and marketing automation services for businesses in Phoenix, Arizona.",
+      description: "Mobile billboard advertising, marketing automation, and AI lead response services for businesses in Phoenix, Arizona.",
   alternates: { canonical: "https://migonow.com" },
 };
 
@@ -58,6 +58,30 @@ export default function HomePage() {
       ],
       cta: "Join the Waitlist",
     },
+    {
+      href: "/ai-lead-response",
+      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+      borderColor: "border-emerald-500/30 hover:border-emerald-400/60",
+      bgColor: "hover:bg-emerald-500/5",
+      glowColor: "bg-emerald-600/30",
+      glowColor2: "bg-teal-600/20",
+      iconName: "Bot",
+      iconColor: "text-emerald-400",
+      iconBg: "bg-emerald-500/20",
+      badge: "Coming Soon — Join Waitlist",
+      badgeColor: "border-emerald-400/30 bg-emerald-500/10 text-emerald-400",
+      title: "AI Lead Response",
+      subtitle: "Instant AI-powered lead engagement",
+      description:
+        "Respond to every inbound lead in seconds — 24/7. Our AI qualifies, answers questions, and books appointments before your competitors even open their inbox.",
+      highlights: [
+        "Instant auto-replies to new leads",
+        "AI qualifies and scores each lead",
+        "Books appointments automatically",
+        "Integrates with your existing CRM",
+      ],
+      cta: "Join the Waitlist",
+    },
   ];
 
   return (
@@ -103,8 +127,8 @@ export default function HomePage() {
       </section>
 
       {/* Service Cards */}
-      <section className="mx-auto max-w-5xl px-6 pb-24">
-        <div className="grid md:grid-cols-2 gap-6">
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
             <Link
               key={s.href}
@@ -120,6 +144,8 @@ export default function HomePage() {
               <div className={`w-14 h-14 rounded-2xl ${s.iconBg} flex items-center justify-center mb-5`}>
                 {s.iconName === "Tablet" ? (
                   <Tablet size={26} className={s.iconColor} />
+                ) : s.iconName === "Bot" ? (
+                  <Bot size={26} className={s.iconColor} />
                 ) : (
                   <Zap size={26} className={s.iconColor} />
                 )}
