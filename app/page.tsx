@@ -32,7 +32,7 @@ export default function HomePage() {
         "Interactive QR codes for instant engagement",
         "Real-time analytics dashboard",
       ],
-      cta: "Explore Billboards",
+      cta: "Join the Waitlist",
     },
     {
       href: "/automations",
@@ -56,7 +56,7 @@ export default function HomePage() {
         "CRM workflow automation",
         "Performance analytics",
       ],
-      cta: "Join the Waitlist",
+      cta: "Explore Automations",
     },
     {
       href: "/ai-lead-response",
@@ -80,7 +80,7 @@ export default function HomePage() {
         "Books appointments automatically",
         "Integrates with your existing CRM",
       ],
-      cta: "Join the Waitlist",
+      cta: "Explore AI Lead Response",
     },
   ];
 
