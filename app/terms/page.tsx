@@ -1,5 +1,6 @@
 ﻿"use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Scale, ShieldCheck, FileText, MessageSquare, CreditCard } from "lucide-react";
 
@@ -11,9 +12,11 @@ export default function TermsPage() {
         <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-              <img
+              <Image
                 src="https://i.imgur.com/clZNuAZ.png?v=2"
                 alt="Migo Logo"
+                width={200}
+                height={48}
                 className="h-12 w-auto"
               />
               <span className="text-xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">

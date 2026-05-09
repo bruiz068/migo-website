@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Lock, Eye, EyeOff } from "lucide-react";
 
@@ -58,9 +59,11 @@ export default function PasswordProtection({ onAuthenticated }: PasswordProtecti
         <div className="bg-gray-900 border border-blue-500/30 rounded-2xl p-8 shadow-2xl">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <img 
-              src="https://i.imgur.com/clZNuAZ.png?v=2" 
-              alt="Migo Logo" 
+            <Image
+              src="https://i.imgur.com/clZNuAZ.png?v=2"
+              alt="Migo Logo"
+              width={150}
+              height={50}
               className="max-w-[150px] h-auto"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';

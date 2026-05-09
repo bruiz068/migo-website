@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 import {
@@ -175,9 +176,11 @@ export default function PricingPage() {
             <Link href="/" className="flex items-center gap-3">
               <ArrowLeft size={20} className="text-white/60" />
               <div className="flex items-center gap-3">
-                <img
+                <Image
                   src="https://i.imgur.com/clZNuAZ.png?v=2"
                   alt="Migo Logo"
+                  width={200}
+                  height={48}
                   className="h-12 w-auto"
                   onError={(e) => {
                     e.currentTarget.style.display = "none";
@@ -218,9 +221,11 @@ export default function PricingPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-blue-500/20" />
         <div className="relative z-10 container mx-auto px-6 py-16 text-center">
           <div className="flex justify-center mb-8">
-            <img
+            <Image
               src="https://i.imgur.com/clZNuAZ.png?v=2"
               alt="Migo Logo"
+              width={200}
+              height={67}
               className="max-w-[200px] h-auto"
               onError={(e) => {
                 e.currentTarget.style.display = "none";

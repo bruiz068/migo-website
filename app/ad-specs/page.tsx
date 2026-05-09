@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { 
   Download, 
@@ -109,9 +110,11 @@ export default function AdSpecsPage() {
             <Link href="/" className="flex items-center gap-3">
               <ArrowLeft size={20} className="text-white/60" />
               <div className="flex items-center gap-3">
-                <img 
-                  src="https://i.imgur.com/clZNuAZ.png?v=2" 
-                  alt="Migo Logo" 
+                <Image
+                  src="https://i.imgur.com/clZNuAZ.png?v=2"
+                  alt="Migo Logo"
+                  width={200}
+                  height={48}
                   className="h-12 w-auto"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
@@ -143,9 +146,11 @@ export default function AdSpecsPage() {
         <div className="relative z-10 container mx-auto px-6 py-16 text-center">
           {/* Logo */}
           <div className="flex justify-center mb-8">
-            <img 
-              src="https://i.imgur.com/clZNuAZ.png?v=2" 
-              alt="Migo Logo" 
+            <Image
+              src="https://i.imgur.com/clZNuAZ.png?v=2"
+              alt="Migo Logo"
+              width={200}
+              height={67}
               className="max-w-[200px] h-auto"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';

@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, QrCode, MapPin, Rocket, Sparkles, Menu, X } from "lucide-react";
 
@@ -88,9 +89,11 @@ export default function BillboardsPage() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-gradient-to-r from-neutral-900/95 via-purple-900/30 to-pink-900/30 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <img 
-              src="https://i.imgur.com/clZNuAZ.png?v=2" 
-              alt="Migo Logo" 
+            <Image
+              src="https://i.imgur.com/clZNuAZ.png?v=2"
+              alt="Migo Logo"
+              width={200}
+              height={48}
               className="h-12 w-auto"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';

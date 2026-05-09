@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Zap, Mail, RefreshCw, Users, BarChart3, Clock, CheckCircle, Menu, X, Sparkles } from "lucide-react";
 
@@ -90,9 +91,11 @@ export default function AutomationsPage() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-gradient-to-r from-neutral-900/95 via-purple-900/30 to-sky-900/30 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-            <img
+            <Image
               src="https://i.imgur.com/clZNuAZ.png?v=2"
               alt="Migo Logo"
+              width={200}
+              height={48}
               className="h-12 w-auto"
             />
             <span className="font-extrabold tracking-tight text-xl text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-purple-400 to-pink-400">

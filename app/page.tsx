@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowRight, Tablet, Zap, Bot } from "lucide-react";
 
@@ -90,9 +91,11 @@ export default function HomePage() {
       <header className="border-b border-white/10 bg-neutral-900/80 backdrop-blur">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src="https://i.imgur.com/clZNuAZ.png?v=2"
               alt="Migo Logo"
+              width={200}
+              height={48}
               className="h-12 w-auto"
             />
             <span className="font-extrabold tracking-tight text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400">

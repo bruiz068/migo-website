@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Mail, Phone, MapPin, Clock, Send, User, Building, MessageSquare, Shield, CheckCircle } from "lucide-react";
 import { useTracking } from '../hooks/useTracking';
@@ -66,9 +67,11 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-              <img 
-                src="https://i.imgur.com/clZNuAZ.png?v=2" 
-                alt="Migo Logo" 
+              <Image
+                src="https://i.imgur.com/clZNuAZ.png?v=2"
+                alt="Migo Logo"
+                width={200}
+                height={48}
                 className="h-12 w-auto"
               />
               <span className="text-xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-sky-400 bg-clip-text text-transparent">
