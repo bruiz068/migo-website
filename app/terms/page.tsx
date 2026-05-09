@@ -293,7 +293,8 @@ export default function TermsPage() {
               <p>Migo Advertisement operates automated SMS notification services for business clients.</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li><strong>Program description:</strong> Automated SMS call summaries sent to registered business operators after AI-assisted phone calls.</li>
-                <li><strong>Message frequency:</strong> Messages are sent on a per-call basis and vary based on call volume.</li>
+                <li><strong>How consent is given:</strong> Operators provide affirmative SMS consent through a dedicated standalone consent form at <Link href="/sofia-sms-consent" className="text-sky-400 hover:text-sky-300 underline">migonow.com/sofia-sms-consent</Link>. SMS consent is obtained separately from the Sofia AI service agreement and is a single-purpose authorization. Consent to receive SMS is not a condition of any purchase or service.</li>
+                <li><strong>Message frequency:</strong> Messages are sent on a per-call basis and vary based on call volume — typically 1 to 20 messages per day.</li>
                 <li><strong>Message and data rates may apply.</strong> Contact your wireless carrier for details.</li>
                 <li><strong>To opt out:</strong> Reply <strong>STOP</strong> to any message to unsubscribe. You will receive no further messages.</li>
                 <li><strong>For help:</strong> Reply <strong>HELP</strong> for assistance or contact <a href="mailto:bernardo@migonow.com" className="text-sky-400 hover:text-sky-300 underline">bernardo@migonow.com</a>.</li>

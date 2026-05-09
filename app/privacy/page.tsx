@@ -190,10 +190,19 @@ export default function PrivacyPage() {
 
               <div className="bg-gray-900/50 rounded-lg p-4">
                 <h3 className="text-lg font-semibold text-purple-400 mb-2">How Consent Is Obtained</h3>
-                <p>Operators opt in by submitting the onboarding form at migonow.com and signing a Sofia AI service agreement that includes the following SMS consent disclosure:</p>
+                <p>
+                  Operators provide affirmative SMS consent through a dedicated, standalone consent step at{" "}
+                  <Link href="/sofia-sms-consent" className="text-sky-400 hover:text-sky-300 underline">
+                    https://migonow.com/sofia-sms-consent
+                  </Link>
+                  . SMS consent is obtained separately from the Sofia AI service agreement and is a single-purpose authorization for SMS messaging only. Operators must check a dedicated, unchecked-by-default consent box that is not bundled with any other agreement, terms acceptance, or marketing checkbox. The page displays the following SMS consent disclosure directly above the consent box:
+                </p>
                 <blockquote className="border-l-4 border-sky-400/50 pl-4 mt-3 text-white/70 italic">
-                  &ldquo;By providing your phone number and signing this agreement, you agree to receive SMS notifications from Sofia AI containing call summaries and service alerts. Message frequency varies based on call volume. Message and data rates may apply. Reply STOP to opt out, HELP for help. View our Privacy Policy and Terms of Service.&rdquo;
+                  &ldquo;By checking the box and submitting this form, you agree to receive recurring automated SMS text messages from Migo Advertisement LLC, sent through the Sofia AI service, at the mobile number you provide. These messages contain AI-generated summaries of inbound phone calls answered by Sofia on your behalf. Message frequency varies based on call volume — typically 1 to 20 messages per day. Message and data rates may apply. Reply STOP at any time to unsubscribe. Reply HELP for help. Consent to receive SMS is not a condition of any purchase or service.&rdquo;
                 </blockquote>
+                <p className="mt-3">
+                  After consent is captured, the operator immediately receives a confirmation SMS. The consent record (timestamp, IP address, mobile number, and the disclosure text shown to the operator) is retained for at least four (4) years to demonstrate compliance with carrier and TCPA recordkeeping requirements.
+                </p>
               </div>
 
               <div className="bg-gray-900/50 rounded-lg p-4">
