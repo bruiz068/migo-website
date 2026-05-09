@@ -37,8 +37,8 @@ export default function TermsPage() {
               Terms &amp; Conditions
             </h1>
           </div>
-          <p className="text-white/60 text-lg">Last updated: April 24, 2026</p>
-          <p className="text-white/50 text-sm mt-1">Effective: April 24, 2026</p>
+          <p className="text-white/60 text-lg">Last updated: May 5, 2026</p>
+          <p className="text-white/50 text-sm mt-1">Effective: May 5, 2026</p>
         </div>
 
         {/* Agreement Banner */}
