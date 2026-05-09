@@ -45,9 +45,9 @@ export default function ContactPage() {
       
       setStatus("ok");
       setForm({ firstName: "", lastName: "", email: "", phone: "", company: "", inquiryType: "", message: "" });
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus("error");
-      setError(err?.message || "Something went wrong.");
+      setError(err instanceof Error ? err.message : "Something went wrong.");
     }
   }
 

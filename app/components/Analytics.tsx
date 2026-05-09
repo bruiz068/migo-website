@@ -16,17 +16,6 @@ export default function Analytics() {
     // Performance monitoring
     if (typeof window !== 'undefined') {
       // Core Web Vitals tracking
-      const trackWebVital = (metric: any) => {
-        if (window.gtag) {
-          window.gtag('event', metric.name, {
-            event_category: 'Web Vitals',
-            value: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
-            event_label: metric.id,
-            non_interaction: true,
-          })
-        }
-      }
-
       // Track page load performance
       window.addEventListener('load', () => {
         // Track page load time

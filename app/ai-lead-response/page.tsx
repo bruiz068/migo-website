@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Bot, Clock, Star, PhoneCall, Calendar, BarChart3, ShieldCheck, CheckCircle, Menu, X, Sparkles } from "lucide-react";
+import { ArrowRight, Clock, Star, PhoneCall, Calendar, BarChart3, ShieldCheck, CheckCircle, Menu, X, Sparkles } from "lucide-react";
 
 export default function AILeadResponsePage() {
   const [form, setForm] = useState({ firstName: "", email: "", company: "" });

@@ -8,7 +8,6 @@ import {
   FileVideo, 
   FileText,
   Monitor,
-  Smartphone,
   AlertCircle,
   CheckCircle,
   Info,

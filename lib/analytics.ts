@@ -11,7 +11,7 @@ export const pageview = (url: string) => {
 }
 
 // Track custom events
-export const event = (action: string, parameters?: any) => {
+export const event = (action: string, parameters?: Record<string, unknown>) => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', action, parameters)
   }
@@ -104,6 +104,6 @@ export const trackEvents = {
 // Declare gtag type for TypeScript
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void
+    gtag: (...args: unknown[]) => void
   }
 }

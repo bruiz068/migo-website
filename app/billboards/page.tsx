@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ArrowRight, Smartphone, QrCode, MapPin, Clock, Rocket, Sparkles, DollarSign, Mail, ShieldCheck, Menu, X } from "lucide-react";
+import { ArrowRight, QrCode, MapPin, Rocket, Sparkles, Menu, X } from "lucide-react";
 
 export default function BillboardsPage() {
   const [form, setForm] = useState({ firstName: "", lastName: "", email: "", company: "", message: "" });
@@ -54,7 +54,7 @@ export default function BillboardsPage() {
     }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [ads.length]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -77,9 +77,9 @@ export default function BillboardsPage() {
       
       setStatus("ok");
       setForm({ firstName: "", lastName: "", email: "", company: "", message: "" });
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus("error");
-      setError(err?.message || "Something went wrong.");
+      setError(err instanceof Error ? err.message : "Something went wrong.");
     }
   }
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, HelpCircle, ChevronDown, ChevronUp, Users, DollarSign, Smartphone, Calendar, Shield, MapPin } from "lucide-react";
+import { ArrowLeft, HelpCircle, ChevronDown, ChevronUp, Users, DollarSign, Smartphone, Calendar, Shield } from "lucide-react";
 
 export default function FAQPage() {
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
